@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\bin\EMailAppWeb.dll.config
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\bin\EMailAppWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\bin\EMailAppWeb.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\obj\Release\EMailAppWeb.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\obj\Release\EMailAppWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\EMailAppWeb\obj\Release\EMailAppWeb.pdb

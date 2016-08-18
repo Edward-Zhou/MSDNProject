@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\obj\Debug\UnitTestProject.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\obj\Debug\UnitTestProject.csproj.ResolveComReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\Edward\Project\MSDNProject\MSDNProject\UnitTestProject\obj\Debug\UnitTestProject.pdb

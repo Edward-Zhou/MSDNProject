@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        document.cookie = "username=John Doe;expires=Thu, 18 Dec 2016 12:00:00 UTC";
+    </script>
+    <script type="text/javascript">
+        var clientId = '382686256381-0qt4qnmosilmt91dt8bftva98i2md11e.apps.googleusercontent.com'; // you can create project from this link https://console.developers.google.com/
+        var apiKey = 'yEay2800UzP7fQ5v6m9W77Dn';
+        var scopes = 'https://www.googleapis.com/auth/contacts.readonly';
+        $(document).on("click", ".googleContactsButton", function () {
+            alert(document.cookie);
+            //gapi.client.setApiKey(apiKey);
+            //window.setTimeout(authorize);
+        });
+        function authorize() {
+            gapi.auth.authorize({ client_id: clientId, scope: scopes, immediate: false }, handleAuthorization);
+        }
+        function handleAuthorization(authorizationResult) {
+            if (authorizationResult && !authorizationResult.error) {
+                $.get("https://www.google.com/m8/feeds/contacts/default/thin?alt=json&access_token=" + authorizationResult.access_token + "&v=3.0",
+                  function (response) {
+                      $("#data").html("you have successfully called google api");
+                      console.log(response);
+                  });
+            }
+        }
+    </script>
+    <script src="https://apis.google.com/js/client.js"></script>
+    <button class="googleContactsButton">Get my contacts</button>
+    <button class="googleContactsButton" onclick="test()">ActiveXObject</button>
+
+    <div style="color:red;font-size:12px">Hello Word</div> 
+    <p id="data"></p>
+    <script type="text/javascript">
+        function test() {
+            var Excel = new ActiveXObject("Excel.Application");
+            Excel.visible = true;
+            Excel.Workbooks.open("C:\Users\v-tazho\Desktop\OpMark.xlsx");
+        }
+    </script>
+</body>
+</html>

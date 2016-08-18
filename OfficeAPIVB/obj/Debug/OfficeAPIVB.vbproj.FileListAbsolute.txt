@@ -1,0 +1,11 @@
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\bin\Debug\OfficeAPIVB.exe.config
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\bin\Debug\OfficeAPIVB.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\bin\Debug\OfficeAPIVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\bin\Debug\OfficeAPIVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.Form1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPIVB\obj\Debug\OfficeAPIVB.vbproj.ResolveComReference.cache

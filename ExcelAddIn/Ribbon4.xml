@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <commands>
+    <command idMso="FileSaveAs" onAction="FileSaveAs"/>
+  </commands>
+    <ribbon>
+      
+        <tabs>
+            <tab idMso="TabAddIns">
+                <group id="group1" label="group1">
+                    <button id="CreateShape" onAction="CreateShape_Click" label="CreateShape" showImage="false" />
+                    <button id="ExcelTemplate" onAction="ExcelTemplate_Click" label="ExcelTemplate" showImage="false" />
+                    <button id="Classbtn" onAction="Classbtn_Click" label="Classbtn" showImage="false" />
+                    <button id="CopyPivotTable" onAction="CopyPivotTable_Click" label="CopyPivotTable" showImage="false" />
+                    <button id="CallMacro" onAction="CallMacro_Click" label="CallMacro" showImage="false" />
+                    <button id="qryTables" onAction="qryTables_Click" label="qryTables" showImage="false" />
+                    <button id="WorkBookSize" onAction="WorkBookSize_Click" label="WorkBookSize" showImage="false" />
+                    <button id="SelectUsedRange" onAction="SelectUsedRange_Click" label="SelectUsedRange" showImage="false" />
+                    <button id="ExcelCopybtn" onAction="ExcelCopybtn_Click" label="ExcelCopy" showImage="false" />
+                    <button id="ShowTaskPane" onAction="ShowTaskPane_Click" label="ShowTaskPane" showImage="false" />
+                    <button id="AllowEditRangesbtn" onAction="AllowEditRangesbtn_Click" label="AllowEditRanges" showImage="false" />
+                    <button id="DeleteRange" onAction="DeleteRange_Click" label="DeleteRange" showImage="false" />
+                    <button id="FilePre" onAction="FilePre_Click" label="FilePre" showImage="false" />
+                    <button id="ShapeSave" onAction="ShapeSave_Click" label="ShapeSave" showImage="false" />
+                    <button id="CustomTaskPane" onAction="CustomTaskPane_Click" label="CustomTaskPane" showImage="false" />
+                    <button id="AddTaskPane" onAction="AddTaskPane_Click" label="AddTaskPane" showImage="false" />
+                    <button id="AddSecondTaskPane" onAction="AddSecondTaskPane_Click" label="AddSecondTaskPane" showImage="false" />
+                    <button id="TaskCount" onAction="TaskCount_Click" label="TaskCount" showImage="false" />
+                    <button id="AddDataLabel" onAction="AddDataLabel_Click" label="AddDataLabel" showImage="false" />
+                    <button id="ChangeDataLabel" onAction="ChangeDataLabel_Click" label="ChangeDataLabel" showImage="false" />
+                    <button id="DataLabelPosition" onAction="DataLabelPosition_Click" label="DataLabelPosition" showImage="false" />
+                    <button id="button1" label="分割啊" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>

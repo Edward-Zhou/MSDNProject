@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\bin\Release\againOneV01Class.cs
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\bin\Release\ClassLibrary.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\bin\Release\ClassLibrary.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\obj\Release\ClassLibrary.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\obj\Release\ClassLibrary.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\obj\Release\ClassLibrary.pdb

@@ -1,0 +1,2 @@
+bin\Release\OfficeAppManifests\7098dd7212114908ad94fd5d02c2cb69.xml
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPane\bin\Release\E_TaskPane.debugapp

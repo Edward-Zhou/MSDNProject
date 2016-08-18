@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ExcelAddInVB
+</name>
+</assembly>
+<members>
+<member name="M:ExcelAddInVB.ThisAddIn.#ctor(Microsoft.Office.Tools.Excel.ApplicationFactory,System.IServiceProvider)">
+</member><member name="M:ExcelAddInVB.ThisAddIn.Initialize">
+</member><member name="M:ExcelAddInVB.ThisAddIn.FinishInitialization">
+</member><member name="M:ExcelAddInVB.ThisAddIn.InitializeDataBindings">
+</member><member name="M:ExcelAddInVB.ThisAddIn.InitializeCachedData">
+</member><member name="M:ExcelAddInVB.ThisAddIn.InitializeData">
+</member><member name="M:ExcelAddInVB.ThisAddIn.BindToData">
+</member><member name="M:ExcelAddInVB.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:ExcelAddInVB.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:ExcelAddInVB.ThisAddIn.IsCached(System.String)">
+</member><member name="M:ExcelAddInVB.ThisAddIn.BeginInitialization">
+</member><member name="M:ExcelAddInVB.ThisAddIn.EndInitialization">
+</member><member name="M:ExcelAddInVB.ThisAddIn.InitializeControls">
+</member><member name="M:ExcelAddInVB.ThisAddIn.InitializeComponents">
+</member><member name="M:ExcelAddInVB.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:ExcelAddInVB.ThisAddIn.OnShutdown">
+</member><member name="T:ExcelAddInVB.ThisAddIn">
+</member><member name="M:ExcelAddInVB.Globals.#ctor">
+</member><member name="T:ExcelAddInVB.Globals">
+</member><member name="M:ExcelAddInVB.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:ExcelAddInVB.ThisRibbonCollection">
+</member><member name="P:ExcelAddInVB.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ExcelAddInVB.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ExcelAddInVB.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

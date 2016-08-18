@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f142b28c-b163-40c6-9014-fd2139de7cd0" solutionId="9bfafe2d-b0da-4e87-80cb-982aeb2d458c" resetWebServer="false" sharePointProductVersion="15.0" name="E_TaskPane" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="78399fa8-0f49-4da0-976f-247727f93862" />
+  </features>
+</package>

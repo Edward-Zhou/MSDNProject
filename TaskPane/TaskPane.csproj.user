@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OfficeAppStartDocument>&lt;NewExcelWorkbook&gt;</OfficeAppStartDocument>
+    <OfficeAndSharePointStartAction>OfficeDesktopClient</OfficeAndSharePointStartAction>
+    <GeneratedFeatureId>9cc9a415-f0cb-444c-afa5-2fda90a88505</GeneratedFeatureId>
+    <GeneratedPackageId>abc07d68-9fba-4acb-a56d-dfaef37ba907</GeneratedPackageId>
+    <GeneratedModuleId>{a5244233-0e83-4a20-8e5a-899ee6264908}</GeneratedModuleId>
+    <GeneratedListId>{50c06d32-2404-4cc1-9ca1-a9c2be3ad790}</GeneratedListId>
+    <GeneratedProductId>{9615266e-8e80-4dba-b2e0-5cd22e336356}</GeneratedProductId>
+    <GeneratedAppVersion>1.0.0.0</GeneratedAppVersion>
+    <GeneratedClientSecret>kZW1/95czMTLeEgM6GE+z6tbs2b2c1dyRcolV1mRfz0=</GeneratedClientSecret>
+    <SharePointSiteUrl>https://officedevmsdn.sharepoint.com/</SharePointSiteUrl>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2016-06-15T07:54:39.3207212Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>2eac16a6-804c-4f0b-9d92-57e472b9b824</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

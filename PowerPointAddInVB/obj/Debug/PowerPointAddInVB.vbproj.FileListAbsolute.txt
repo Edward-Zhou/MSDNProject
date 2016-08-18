@@ -1,0 +1,13 @@
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\PowerPointAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\PowerPointAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\PowerPointAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\PowerPointAddInVB.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\PowerPointAddInVB.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Debug\PowerPointAddInVB.Ribbon1.resources

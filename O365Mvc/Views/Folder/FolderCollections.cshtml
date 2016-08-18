@@ -1,0 +1,17 @@
+﻿@model IEnumerable<String>
+
+@{
+    ViewBag.Title = "FolderCollections";
+}
+
+<h2>FolderCollections</h2>
+<table>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item</td>
+        </tr>
+
+    }
+</table>

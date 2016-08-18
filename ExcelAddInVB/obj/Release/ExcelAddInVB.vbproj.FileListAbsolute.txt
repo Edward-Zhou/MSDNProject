@@ -1,0 +1,13 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\ExcelAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\ExcelAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\ExcelAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\ExcelAddInVB.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\ExcelAddInVB.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.Ribbon1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddInVB\obj\Release\ExcelAddInVB.pdb

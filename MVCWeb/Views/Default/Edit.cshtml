@@ -1,0 +1,116 @@
+﻿@model  MVCWeb.Models.CustomerAccount
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    @*// Hiding Buiness Data*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Yes").click(function () {
+
+                $("#Comp_Info").show();
+            });
+            $("#No").click(function () {
+
+                $("#Comp_Info").hide();
+
+
+            });
+        });
+    </script>
+    <meta name="viewport" content="width=device-width" />
+    <title>RadioBtn</title>
+</head>
+<body>
+    @using (Html.BeginForm("Edit", "Default",FormMethod.Post, new { id = "myForm" }))
+ {
+        @Html.ValidationSummary()
+        @Html.HiddenFor(model => model.ID)
+
+}
+ // Personal Customer Data
+ //-----------------------------------------------------------------------------------
+<br />
+        <b><strong> Customer Detail Information</strong></b>
+        <br />
+ //-----------------------------------------------------------------------------------
+<br />
+
+    <div style="font-family:Arial">
+        <table>
+            <tr>
+
+                <td>
+
+                    @Html.Label("Full Name :-*")
+                    @Html.TextBoxFor(model => model.Full_Name , new { id = "name", name = "name" })<br />
+                    <span id="nameError" class="error"></span><br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.Label("Email :-*")
+                    @*@Model.CustomerAccount.Email*@
+                    @Html.TextBoxFor(model => model.Email,new { id = "email", name = "email" })<br />
+                    <span id="emailError" class="error"></span><br />
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>
+                    // Checkbox to select if Buisness buisness or Personal Customer
+                    @Html.Label("Customer Type :-")
+
+                    @Html.RadioButtonFor(model => model.Is_Biz_Cust, false, new { @id = "No" })
+                    @Html.Label("No", "Personal")
+                    @Html.RadioButtonFor(model => model.Is_Biz_Cust, true, new { @id = "Yes" })
+                    @Html.Label("Yes", "Business")
+
+                </td>
+            </tr>
+        </table>
+        
+        // If this is true then show Buiness Customer otherwise only show Personal Customer
+        
+ // Buinsess Customer Data
+            <div id="Comp_Info">
+                <b><strong> Information</strong></b>
+                <br />
+                <br />
+                @if (Model.Is_Biz_Cust.Equals(false))
+                {
+                @Html.Label("Company Name :-*")
+                @Html.TextBoxFor(model => model.custdetail.Company_Name,new { id="cname",name="cname"})<br />
+
+
+                @Html.Label("Email :-*")
+                @Html.TextBoxFor(model => model.custdetail.Company_Email,new { id="cemail",name="cemail"})
+                }
+                <span id="cnameError" class="error"></span> <span id="cemailError" class="error"></span>
+                <br />
+                </div>
+                
+
+                <input type="submit" value="Save" name="@Url.Action("/Admin/Customer/index?%20&store_id=-1")" />
+
+                }
+                <p>
+                    <a href="/Admin/Customer/index?%20&store_id=-1">Cancel</a>
+                <p>
+            @if (true)
+            { 
+                <p>hello true</p>
+            }
+            
+        @if (false)
+        { 
+            <p>hellow false</p>
+        }
+    </body>
+</html>

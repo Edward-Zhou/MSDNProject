@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="78399fa8-0f49-4da0-976f-247727f93862" Scope="Web" Title="E_TaskPane Feature1" Version="1.0.0.0">
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="61e874cd-3ac3-4531-8628-28c3acb78279" />
+  </ActivationDependencies>
+  <ElementManifests>
+    <ElementManifest Location="OfficeDocuments\Elements.xml" />
+    <ElementFile Location="OfficeDocuments\Book1.xlsx" />
+    <ElementManifest Location="OfficeDocumentsLibrary\Elements.xml" />
+    <ElementFile Location="7098dd7212114908ad94fd5d02c2cb69\E_TaskPane.xml" />
+    <ElementManifest Location="7098dd7212114908ad94fd5d02c2cb69\Elements.xml" />
+  </ElementManifests>
+</Feature>

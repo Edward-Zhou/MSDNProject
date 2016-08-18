@@ -1,0 +1,29 @@
+﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            //your code here
+            $('#ddlReports').on('change', function () {
+            var val = $(this).val();
+                var x = '@Url.Action("ReportSearch", "Report")' + "/" + val;
+                alert(x);
+                alert("hello");
+                alert($("#searchpane1").length);
+                alert($("#searchpane").name);
+               
+
+            });
+        });
+</script>
+<div id="Reports">
+    <span>Reports:</span> @Html.DropDownList("ddlReports", new List<SelectListItem>
+{
+new SelectListItem { Text = "Report1", Value = "1"},
+new SelectListItem { Text = "Report2", Value = "2"},
+new SelectListItem { Text = "Report3", Value = "3"}
+}, "")
+</div>
+<div id="ReportInfo">
+    @*@{
+        Html.RenderPartial("ReportInfo");
+        }*@
+</div>

@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\EMailAppManifest.xml
+D:\Edward\Project\MSDNProject\MSDNProject\EMailApp\bin\Debug\EMailApp.debugapp

@@ -1,0 +1,4 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ComVisible\bin\Debug\ComVisible.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ComVisible\bin\Debug\ComVisible.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ComVisible\obj\Debug\ComVisible.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ComVisible\obj\Debug\ComVisible.pdb

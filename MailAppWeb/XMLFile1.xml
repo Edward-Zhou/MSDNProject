@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <h:ServerVersionInfo MajorVersion="15" MinorVersion="1" MajorBuildNumber="256" MinorBuildNumber="15" Version="V2_56" xmlns:h="http://schemas.microsoft.com/exchange/services/2006/types" xmlns="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  </s:Header>
+  <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <m:GetItemResponse xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
+      <m:ResponseMessages>
+        <m:GetItemResponseMessage ResponseClass="Success">
+          <m:ResponseCode>NoError</m:ResponseCode>
+          <m:Items>
+            <t:Message>
+              <t:ItemId Id="AAMkAGYxOGM2OWYxLTdiYzItNDQzNS1hZjI0LTQ2YjM1MjFkZjZkMQBGAAAAAABgZWRhs244SLT8eNXGQtHcBwDYZNyrvtGZSJfc4k5243O/AAAAAAEMAADYZNyrvtGZSJfc4k5243O/AACWjJ42AAA=" ChangeKey="CQAAABYAAADYZNyrvtGZSJfc4k5243O/AACWimfi"/>
+              <t:ParentFolderId Id="AQMkAGYxOGM2OWYxLTdiYzItNDQAMzUtYWYyNC00NmIzNTIxZGY2ZDEALgAAA2BlZGGzbjhItPx41cZC0dwBANhk3Ku+0ZlIl9ziTnbjc78AAAIBDAAAAA==" ChangeKey="AQAAAA=="/>
+              <t:ItemClass>IPM.Note</t:ItemClass>
+              <t:Subject>Hello (235) 555-0110</t:Subject>
+              <t:Sensitivity>Normal</t:Sensitivity>
+              <t:Body BodyType="HTML" IsTruncated="false">
+                &lt;html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"&gt;&#xD;
+                &lt;head&gt;&#xD;
+                &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;&#xD;
+                &lt;meta name="Generator" content="Microsoft Word 15 (filtered medium)"&gt;&#xD;
+                &lt;style&gt;&lt;!--&#xD;
+                /* Font Definitions */&#xD;
+                @font-face&#xD;
+                {font-family:\5B8B\4F53;&#xD;
+                panose-1:2 1 6 0 3 1 1 1 1 1;}&#xD;
+                @font-face&#xD;
+                {font-family:"Cambria Math";&#xD;
+                panose-1:2 4 5 3 5 4 6 3 2 4;}&#xD;
+                @font-face&#xD;
+                {font-family:Calibri;&#xD;
+                panose-1:2 15 5 2 2 2 4 3 2 4;}&#xD;
+                @font-face&#xD;
+                {font-family:"\@\5B8B\4F53";&#xD;
+                panose-1:2 1 6 0 3 1 1 1 1 1;}&#xD;
+                /* Style Definitions */&#xD;
+                p.MsoNormal, li.MsoNormal, div.MsoNormal&#xD;
+                {margin:0cm;&#xD;
+                margin-bottom:.0001pt;&#xD;
+                text-align:justify;&#xD;
+                text-justify:inter-ideograph;&#xD;
+                font-size:10.5pt;&#xD;
+                font-family:"Calibri",sans-serif;}&#xD;
+                a:link, span.MsoHyperlink&#xD;
+                {mso-style-priority:99;&#xD;
+                color:#0563C1;&#xD;
+                text-decoration:underline;}&#xD;
+                a:visited, span.MsoHyperlinkFollowed&#xD;
+                {mso-style-priority:99;&#xD;
+                color:#954F72;&#xD;
+                text-decoration:underline;}&#xD;
+                span.EmailStyle17&#xD;
+                {mso-style-type:personal-compose;&#xD;
+                font-family:"Calibri",sans-serif;&#xD;
+                color:windowtext;}&#xD;
+                .MsoChpDefault&#xD;
+                {mso-style-type:export-only;&#xD;
+                font-family:"Calibri",sans-serif;}&#xD;
+                /* Page Definitions */&#xD;
+                @page WordSection1&#xD;
+                {size:612.0pt 792.0pt;&#xD;
+                margin:72.0pt 90.0pt 72.0pt 90.0pt;}&#xD;
+                div.WordSection1&#xD;
+                {page:WordSection1;}&#xD;
+                --&gt;&lt;/style&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;&#xD;
+                &lt;o:shapedefaults v:ext="edit" spidmax="1026" /&gt;&#xD;
+                &lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;&#xD;
+                &lt;o:shapelayout v:ext="edit"&gt;&#xD;
+                &lt;o:idmap v:ext="edit" data="1" /&gt;&#xD;
+                &lt;/o:shapelayout&gt;&lt;/xml&gt;&lt;![endif]--&gt;&#xD;
+                &lt;/head&gt;&#xD;
+                &lt;body lang="ZH-CN" link="#0563C1" vlink="#954F72" style="text-justify-trim:punctuation"&gt;&#xD;
+                &lt;div class="WordSection1"&gt;&#xD;
+                &lt;p class="MsoNormal"&gt;&lt;em&gt;&lt;span lang="EN-US" style="font-family:&amp;quot;Calibri&amp;quot;,sans-serif"&gt;(235) 555-0111&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xD;
+                &lt;p class="MsoNormal"&gt;&lt;em&gt;&lt;span lang="EN-US" style="font-family:&amp;quot;Calibri&amp;quot;,sans-serif"&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xD;
+                &lt;p class="MsoNormal"&gt;&lt;em&gt;&lt;span lang="EN-US" style="font-family:&amp;quot;Calibri&amp;quot;,sans-serif"&gt;(235) 555-0112&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xD;
+                &lt;p class="MsoNormal"&gt;&lt;em&gt;&lt;span lang="EN-US" style="font-family:&amp;quot;Calibri&amp;quot;,sans-serif"&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;&#xD;
+                &lt;p class="MsoNormal"&gt;&lt;em&gt;&lt;span lang="EN-US" style="font-family:&amp;quot;Calibri&amp;quot;,sans-serif"&gt;(235) 555-0113&lt;/span&gt;&lt;/em&gt;&lt;span lang="EN-US"&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/p&gt;&#xD;
+                &lt;/div&gt;&#xD;
+                &lt;/body&gt;&#xD;
+                &lt;/html&gt;&#xD;
+              </t:Body>
+              <t:DateTimeReceived>2015-09-01T09:21:23Z</t:DateTimeReceived>
+              <t:Size>18580</t:Size>
+              <t:Importance>Normal</t:Importance>
+              <t:IsSubmitted>false</t:IsSubmitted>
+              <t:IsDraft>false</t:IsDraft>
+              <t:IsFromMe>true</t:IsFromMe>
+              <t:IsResend>false</t:IsResend>
+              <t:IsUnmodified>true</t:IsUnmodified>
+              <t:InternetMessageHeaders>
+                <t:InternetMessageHeader HeaderName="Received">from HKXPR02MB0871.apcprd02.prod.outlook.com (10.161.180.20) by HKXPR02MB0869.apcprd02.prod.outlook.com (10.161.180.18) with Microsoft SMTP Server (TLS) id 15.1.256.15 via Mailbox Transport; Tue, 1 Sep 2015 09:21:23 +0000</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Received">from HKXPR02MB0869.apcprd02.prod.outlook.com (10.161.180.18) by HKXPR02MB0871.apcprd02.prod.outlook.com (10.161.180.20) with Microsoft SMTP Server (TLS) id 15.1.256.15; Tue, 1 Sep 2015 09:21:21 +0000</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Received">from HKXPR02MB0869.apcprd02.prod.outlook.com ([10.161.180.18]) by HKXPR02MB0869.apcprd02.prod.outlook.com ([10.161.180.18]) with mapi id 15.01.0256.013; Tue, 1 Sep 2015 09:21:21 +0000</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Authentication-Results">OfficeDevGroup.onmicrosoft.com; dkim=none (message not signed) header.d=none;OfficeDevGroup.onmicrosoft.com; dmarc=none action=none header.from=OfficeDevGroup.onmicrosoft.com;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Content-Type">application/ms-tnef</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Content-Transfer-Encoding">binary</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Subject">Hello (235) 555-0110</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Thread-Topic">Hello (235) 555-0110</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Thread-Index">AdDkl3eOvBbdvV8wR3+ULRMiOiar+w==</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Date">Tue, 1 Sep 2015 09:21:20 +0000</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Message-ID">&lt;HKXPR02MB0869ADE952978433AD14FDC8D56A0@HKXPR02MB0869.apcprd02.prod.outlook.com&gt;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Accept-Language">en-US</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Content-Language">en-US</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-SCL">-1</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-TNEF-Correlator">&lt;HKXPR02MB0869ADE952978433AD14FDC8D56A0@HKXPR02MB0869.apcprd02.prod.outlook.com&gt;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="MIME-Version">1.0</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-MessageDirectionality">Originating</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-AuthSource">HKXPR02MB0869.apcprd02.prod.outlook.com</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-AuthAs">Internal</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-AuthMechanism">04</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Originating-IP">[167.220.232.205]</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-Network-Message-Id">08a50a50-25d2-4ff3-8d0b-08d2b2aeb381</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="Return-Path">v-tazho@OfficeDevGroup.onmicrosoft.com</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Microsoft-Antispam">UriScan:;BCL:0;PCL:0;RULEID:;SRVR:HKXPR02MB0871;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Organization-AVStamp-Service">1.0</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Exchange-Antispam-Report-Test">UriScan:(108003899814671);</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Exchange-Antispam-Report-CFA-Test">BCL:0;PCL:0;RULEID:(601004)(8121501046)(3002001);SRVR:HKXPR02MB0871;BCL:0;PCL:0;RULEID:;SRVR:HKXPR02MB0871;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Forefront-Antispam-Report">SFV:SKI;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:HKXPR02MB0871;H:HKXPR02MB0869.apcprd02.prod.outlook.com;FPR:;SPF:None;LANG:;</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="SpamDiagnosticOutput">1:0</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-CrossTenant-OriginalArrivalTime">01 Sep 2015 09:21:20.5201 (UTC)</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-CrossTenant-FromEntityHeader">Hosted</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-CrossTenant-Id">03e69ff4-5756-40dc-bea6-044426a2ef3a</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Transport-CrossTenantHeadersStamped">HKXPR02MB0871</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-MS-Exchange-Transport-EndToEndLatency">00:00:02.5938317</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Microsoft-Exchange-Diagnostics">1;HKXPR02MB0871;2:VBYL7lbDF1Gody1KAIzPKEItFnZhGAJzXhdRfqURxHPskzq2G1q7Jcay9LhJSIKedOJAolTUh9JYXd5lUJWh167qNET65bqgWFN0kZlUCthD2o56BNh7B7wc7alXhpuiZAyNXUi6UlcFxxeWWBinuGsQK1j1JjMNB8H85tdtMlE=;3:smkG015oq/92fxNMVQpl3ljNy6aNNChdnWXwy1sqeKTfqtYDxggfJAWAVwH3ltxUTpbXhtPHYxlElPvVBzVWJfD7cWt+Clf/Ok4pIF/kSDtwKgh/v6QVIjvDPBTC4wBGXyPVtCSly2Xhp2UuQagcOg==;25:WMzkkboTkg1PJDdGb0IzxDv2YAHZBLpbW6xe911GSpTQennEs5HVAGg1gt+XC/IL2HGFmNK+b0Wdx9Sair1atbno0YLfOe/AGlfx9ih1sN0tjgssISOcV7CrwM4bfu8K1cyLhpLaxAZm1JieCyT+pg==;4:AEjCQaInnoEXp3xnEoODlOAY/bFoxucgna7BKHaZvQh/8tGTlOxiST+fepTigRESBgkz3tomXK/7i1LNBkkkD0FugRWlYohDjHwdNOsgqKjVnqAn5Lhor4wP5VCsMbs+1YJ3LSJH8Ygylppru7EVnYmSvF2UWqoQsqDRBNEkKpDIF9uC7+n8guWDNrlWbXK6;23:BIQSa6HH0+cTEW2n4nD8J3279MlNgCGJ23nLAglyUo9oHiH3LX+WhoWVxclETVrL/dse41CG2dGlywylyghO7wyWNHKZAXfUw4bQcJ+frqQfQVqIjLMm0JCMBJk/C4Lp681cvrLY6kCubbWFTMg47PlOv68aW9Fe//Qeu/CHNXDZ0PGrYQ2nAOvRNiTCqDLQ</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Microsoft-Exchange-Diagnostics">1;HKXPR02MB0871;5:QtgOy/DlxtYzD40u3OdL4GQGwMQItJLMNw98l+CdArLy2IbRtbvldtlDLlDAk43fTPj+7kT5MlXTfcA1jt6qUw7dJwXBxAHr61gQI6DeKZwdclmpHTZ/4YfrxgF+saMLKhimv8TDWHofuXPX+WHFdQ==;24:VoE0wIMCQFAUumgrAWD2PBRSRq0xUuxPqM6G2ri7wMtgyePk4Xfa0Y4FFPST8TwC2L2SrTqWidT3NEXBZSNU2IPgzR9lZjCBxH8Gg3P2KSI=;20:g/UYNH6FuRAUVWteGqRVvs66zaC2dzoB3ZIpwi1XVIunwLgQsH4JdvKbyqka4c7+CcdK/E4BHc0LuXaK1IAm5w==</t:InternetMessageHeader>
+                <t:InternetMessageHeader HeaderName="X-Microsoft-Exchange-Diagnostics">1;HKXPR02MB0869;9:kMIlQcpR8N2G2vaOxFve93ke2fqQw/ki9UjlO0+goHBTARKq/9+WEdl74q5C84TNTJj0xzVTD5pWeq4zOYyd+n0t63ZJmClxEx9K9nmLhGlb1edjMQ0nkTowXbDtPb7e</t:InternetMessageHeader>
+              </t:InternetMessageHeaders>
+              <t:DateTimeSent>2015-09-01T09:21:20Z</t:DateTimeSent>
+              <t:DateTimeCreated>2015-09-01T09:21:23Z</t:DateTimeCreated>
+              <t:ResponseObjects>
+                <t:ReplyToItem/>
+                <t:ReplyAllToItem/>
+                <t:ForwardItem/>
+              </t:ResponseObjects>
+              <t:ReminderIsSet>false</t:ReminderIsSet>
+              <t:ReminderMinutesBeforeStart>0</t:ReminderMinutesBeforeStart>
+              <t:DisplayCc/>
+              <t:DisplayTo>Zhou Tao</t:DisplayTo>
+              <t:HasAttachments>false</t:HasAttachments>
+              <t:Culture>en-US</t:Culture>
+              <t:EffectiveRights>
+                <t:CreateAssociated>false</t:CreateAssociated>
+                <t:CreateContents>false</t:CreateContents>
+                <t:CreateHierarchy>false</t:CreateHierarchy>
+                <t:Delete>true</t:Delete>
+                <t:Modify>true</t:Modify>
+                <t:Read>true</t:Read>
+                <t:ViewPrivateItems>true</t:ViewPrivateItems>
+              </t:EffectiveRights>
+              <t:LastModifiedName>Zhou Tao</t:LastModifiedName>
+              <t:LastModifiedTime>2015-09-01T09:21:23Z</t:LastModifiedTime>
+              <t:IsAssociated>false</t:IsAssociated>
+              <t:WebClientReadFormQueryString>https://outlook.office365.com/owa/?ItemID=AAMkAGYxOGM2OWYxLTdiYzItNDQzNS1hZjI0LTQ2YjM1MjFkZjZkMQBGAAAAAABgZWRhs244SLT8eNXGQtHcBwDYZNyrvtGZSJfc4k5243O%2FAAAAAAEMAADYZNyrvtGZSJfc4k5243O%2FAACWjJ42AAA%3D&amp;exvsurl=1&amp;viewmodel=ReadMessageItem</t:WebClientReadFormQueryString>
+              <t:ConversationId Id="AAQkAGYxOGM2OWYxLTdiYzItNDQzNS1hZjI0LTQ2YjM1MjFkZjZkMQAQALwW3b1fMEd/lC0TIjomq/s="/>
+              <t:Flag>
+                <t:FlagStatus>NotFlagged</t:FlagStatus>
+              </t:Flag>
+              <t:InstanceKey>AQAAAAAAAQwBAAAAloyeNgAAAAA=</t:InstanceKey>
+              <t:EntityExtractionResult>
+                <t:PhoneNumbers>
+                  <t:Phone>
+                    <t:Position>LatestReply</t:Position>
+                    <t:OriginalPhoneString>(235) 555-0111</t:OriginalPhoneString>
+                    <t:PhoneString>2355550111</t:PhoneString>
+                    <t:Type>Unspecified</t:Type>
+                  </t:Phone>
+                  <t:Phone>
+                    <t:Position>LatestReply</t:Position>
+                    <t:OriginalPhoneString>(235) 555-0112</t:OriginalPhoneString>
+                    <t:PhoneString>2355550112</t:PhoneString>
+                    <t:Type>Unspecified</t:Type>
+                  </t:Phone>
+                  <t:Phone>
+                    <t:Position>LatestReply</t:Position>
+                    <t:OriginalPhoneString>(235) 555-0113</t:OriginalPhoneString>
+                    <t:PhoneString>2355550113</t:PhoneString>
+                    <t:Type>Unspecified</t:Type>
+                  </t:Phone>
+                </t:PhoneNumbers>
+              </t:EntityExtractionResult>
+              <t:Sender>
+                <t:Mailbox>
+                  <t:Name>Zhou Tao</t:Name>
+                  <t:EmailAddress>v-tazho@OfficeDevGroup.onmicrosoft.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:Sender>
+              <t:ToRecipients>
+                <t:Mailbox>
+                  <t:Name>Zhou Tao</t:Name>
+                  <t:EmailAddress>v-tazho@OfficeDevGroup.onmicrosoft.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:ToRecipients>
+              <t:IsReadReceiptRequested>false</t:IsReadReceiptRequested>
+              <t:IsDeliveryReceiptRequested>false</t:IsDeliveryReceiptRequested>
+              <t:ConversationIndex>AdDkl3eOvBbdvV8wR3+ULRMiOiar+w==</t:ConversationIndex>
+              <t:ConversationTopic>Hello (235) 555-0110</t:ConversationTopic>
+              <t:From>
+                <t:Mailbox>
+                  <t:Name>Zhou Tao</t:Name>
+                  <t:EmailAddress>v-tazho@OfficeDevGroup.onmicrosoft.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:From>
+              <t:InternetMessageId>&lt;HKXPR02MB0869ADE952978433AD14FDC8D56A0@HKXPR02MB0869.apcprd02.prod.outlook.com&gt;</t:InternetMessageId>
+              <t:IsRead>false</t:IsRead>
+              <t:ReceivedBy>
+                <t:Mailbox>
+                  <t:Name>Zhou Tao</t:Name>
+                  <t:EmailAddress>v-tazho@OfficeDevGroup.onmicrosoft.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:ReceivedBy>
+              <t:ReceivedRepresenting>
+                <t:Mailbox>
+                  <t:Name>Zhou Tao</t:Name>
+                  <t:EmailAddress>v-tazho@OfficeDevGroup.onmicrosoft.com</t:EmailAddress>
+                  <t:RoutingType>SMTP</t:RoutingType>
+                  <t:MailboxType>Mailbox</t:MailboxType>
+                </t:Mailbox>
+              </t:ReceivedRepresenting>
+            </t:Message>
+          </m:Items>
+        </m:GetItemResponseMessage>
+      </m:ResponseMessages>
+    </m:GetItemResponse>
+  </s:Body>
+</s:Envelope>

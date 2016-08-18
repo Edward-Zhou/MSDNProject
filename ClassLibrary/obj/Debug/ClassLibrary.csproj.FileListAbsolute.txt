@@ -1,0 +1,4 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\bin\Debug\ClassLibrary.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\bin\Debug\ClassLibrary.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\obj\Debug\ClassLibrary.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ClassLibrary\obj\Debug\ClassLibrary.pdb

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Orders>
+    <OrderID>10248</OrderID>
+    <CustomerID>VINET</CustomerID>
+    <EmployeeID>5</EmployeeID>
+    <OrderDate>1996-07-04T00:00:00</OrderDate>
+    <RequiredDate>1996-08-01T00:00:00</RequiredDate>
+    <ShippedDate>1996-07-16T00:00:00</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>32.3800</Freight>
+    <ShipName>Vins et alcools Chevalier</ShipName>
+    <ShipAddress>59 rue de l'Abbaye</ShipAddress>
+    <ShipCity>Reims</ShipCity>
+    <ShipPostalCode>51100</ShipPostalCode>
+    <ShipCountry>France</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>10249</OrderID>
+    <CustomerID>VINET</CustomerID>
+    <EmployeeID>5</EmployeeID>
+    <OrderDate>1996-07-04T00:00:00</OrderDate>
+    <RequiredDate>1996-08-01T00:00:00</RequiredDate>
+    <ShippedDate>1996-07-16T00:00:00</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>32.3800</Freight>
+    <ShipName>Vins et alcools Chevalier</ShipName>
+    <ShipAddress>59 rue de l'Abbaye</ShipAddress>
+    <ShipCity>Reims</ShipCity>
+    <ShipPostalCode>51100</ShipPostalCode>
+    <ShipCountry>France</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>1043</OrderID>
+    <CustomerID>VINET</CustomerID>
+    <EmployeeID>5</EmployeeID>
+    <OrderDate>1996-07-04T00:00:00</OrderDate>
+    <RequiredDate>1996-08-01T00:00:00</RequiredDate>
+    <ShippedDate>1996-07-16T00:00:00</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>32.3800</Freight>
+    <ShipName>Vins et alcools Chevalier</ShipName>
+    <ShipAddress>59 rue de l'Abbaye</ShipAddress>
+    <ShipCity>Reims</ShipCity>
+    <ShipPostalCode>51100</ShipPostalCode>
+    <ShipCountry>France</ShipCountry>
+  </Orders>
+  <Orders>
+    <OrderID>1241</OrderID>
+    <CustomerID>VINET</CustomerID>
+    <EmployeeID>5</EmployeeID>
+    <OrderDate>1996-07-04T00:00:00</OrderDate>
+    <RequiredDate>1996-08-01T00:00:00</RequiredDate>
+    <ShippedDate>1996-07-16T00:00:00</ShippedDate>
+    <ShipVia>3</ShipVia>
+    <Freight>32.3800</Freight>
+    <ShipName>Vins et alcools Chevalier</ShipName>
+    <ShipAddress>59 rue de l'Abbaye</ShipAddress>
+    <ShipCity>Reims</ShipCity>
+    <ShipPostalCode>51100</ShipPostalCode>
+    <ShipCountry>France</ShipCountry>
+  </Orders>
+</Root>

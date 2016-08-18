@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns">
+        <group id="MyGroup"
+               label="My Group">
+          <button id="button1" onAction="OnAction" supertip="This will send a mail" enabled="true" label="Send" size="large" getImage="GetMainImage" />
+          <button id="button2" onAction="OnAction1" supertip="This will send a mail1" enabled="true" label="Send" size="large" getImage="GetMainImage" />
+          <button id="setProperty" onAction="SetCustomProperty" label="SetCustomProperty"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

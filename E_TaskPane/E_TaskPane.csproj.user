@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>https://officedevgroup.sharepoint.com/sites/devlab/</SharePointSiteUrl>
+    <OfficeAndSharePointStartAction>OfficeDesktopClient</OfficeAndSharePointStartAction>
+    <GeneratedFeatureId>78399fa8-0f49-4da0-976f-247727f93862</GeneratedFeatureId>
+    <GeneratedPackageId>f142b28c-b163-40c6-9014-fd2139de7cd0</GeneratedPackageId>
+    <GeneratedModuleId>{5343859e-1a43-4641-a91e-2417465c52b0}</GeneratedModuleId>
+    <GeneratedListId>{a223b15b-a980-4773-823e-43147ba021a3}</GeneratedListId>
+    <GeneratedProductId>{c67a906e-5ad2-4073-8491-19f068ccaaa7}</GeneratedProductId>
+    <GeneratedAppVersion>1.0.0.0</GeneratedAppVersion>
+    <GeneratedClientSecret>VGG5oOh90SQg2mik9Xl2BJU4Z08Y/TGTyNMHiFX5bxE=</GeneratedClientSecret>
+    <OfficeAppStartDocument>&lt;NewWordDocument&gt;</OfficeAppStartDocument>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <ProjectStore>
+          <AppInstancePackageModifiedTime>2015-09-15T09:27:26.2585951Z</AppInstancePackageModifiedTime>
+          <AppInstanceId>76bb4926-a2e5-483a-9b91-368ebb0b4dc9</AppInstanceId>
+        </ProjectStore>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

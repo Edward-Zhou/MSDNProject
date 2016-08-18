@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="../../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1.1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1 style="color:red"></h1>
+    <!--<div id="content-header">
+        <div class="padding">
+            <h1>Welcome</h1>
+        </div>
+    </div>-->
+    <div id="content-main">
+        <div class="padding">
+            <p><strong>Add home screen content here.</strong></p>
+            <p>For example:</p>
+            <button id="get-data-from-selection">Get data from selection</button>
+            <button id="Bindings-addFromSelectionAsync" onclick="addFromSelectionAsync()">Bindings addFromSelectionAsync</button>
+            <button id="addRows" onclick="addRows">addRows</button>
+            <button id="addTableData" onclick="addTableData()">addTableData</button>
+            <button id="addLinkWord" onclick="addLinkWord()">addLinkWord</button>
+            <button id="addEventHandlerToDocument" onclick="addEventHandlerToDocument()">addEventHandlerToDocument</button>
+            <button id="addTablewithFormula" onclick="addTablewithFormula()">addTablewithFormula</button>
+            <button id="getDocumentAsCompressed" onclick="getDocumentAsCompressed()">getDocumentAsCompressed</button>
+            <button id="addBindingFromPrompt" onclick="addBindingFromPrompt()">addBindingFromPrompt</button>
+            <button id="callUrl" onclick="callUrl()">callUrl</button>
+            <button id="addHandlerAsync" onclick="addHandlerAsync()">addHandlerAsync</button>
+            <button id="customXmlPart" onclick="customXmlPart()">customXmlPart</button>
+            <button id="customXmlPartEvent" onclick="customXmlPartEvent()">customXmlPartEvent</button>
+            <button id="deleteXMLPart" onclick="deleteXMLPart()">deleteXMLPart</button>
+            <button id="writeMatrix" onclick="writeMatrix()">writeMatrix</button>
+            <button id="EmptyMatrix" onclick="EmptyMatrix()">EmptyMatrix</button>
+            <button id="getWordOOXML" onclick="getWordOOXML()">getWordOOXML</button>
+            <button id="setWordOOXML" onclick="setWordOOXML()">setWordOOXML</button>
+            <button id="getExcelRangeAddress" onclick="getExcelRangeAddress()">getExcelRangeAddress</button>
+            <button id="getWordSelectionHtml" onclick="getWordSelectionHtml()">getWordSelectionHtml</button>
+            <button id="getWordSelectionOoxml" onclick="getWordSelectionOoxml()">getWordSelectionOoxml</button>
+            <button id="createCookies" onclick="createCookies()">createCookies</button>
+            <button id="addHandler" onclick="addHandler()">addHandler</button>
+            <button id="insertImage" onclick="insertImage()">addHandler</button>
+            <button id="insertImageWithStream">insertImageWithStream</button>
+            <button id="BindingDataChangedEvent" onclick="BindingDataChangedEvent()">BindingDataChangedEvent</button>
+            <button id="DocumentRefer">DocumentRefer</button>
+            <button id="getUrl">getUrl</button>
+            <button id="getIP">getIP</button>
+            <button id="createTableAtSelection">createTableAtSelection</button>
+            <button id="createObject">createObject</button>
+            <input type="file" onchange="previewFile()"><br>
+            <!--<img id="imageid" src="http://bit.ly/18g0VNp">-->
+            <canvas id="imgCanvas" />
+            <img src="" height="200" alt="Image preview...">
+            <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+            <script type="text/javascript">
+                var clientId = '382686256381-0qt4qnmosilmt91dt8bftva98i2md11e.apps.googleusercontent.com'; // you can create project from this link https://console.developers.google.com/
+                var apiKey = 'yEay2800UzP7fQ5v6m9W77Dn';
+
+                var scopes = 'https://www.googleapis.com/auth/contacts.readonly';
+                $(document).on("click", ".googleContactsButton", function () {
+                    gapi.client.setApiKey(apiKey);
+                    window.setTimeout(authorize);
+                });
+                function authorize() {
+                    gapi.auth.authorize({ client_id: clientId, scope: scopes, immediate: false }, handleAuthorization);
+                }
+                function handleAuthorization(authorizationResult) {
+                    if (authorizationResult && !authorizationResult.error) {
+                        $.get("https://www.google.com/m8/feeds/contacts/default/thin?alt=json&access_token=" + authorizationResult.access_token + "&v=3.0",
+                          function (response) {
+                              $("#data").html("you have successfully called google api");
+                              console.log(response);
+                          });
+                    }
+                }
+            </script>
+            <script src="https://apis.google.com/js/client.js"></script>
+            <button class="googleContactsButton">Get my contacts</button>
+            <p id="data"></p>
+
+            <p style="margin-top: 50px;">
+                <a target="_blank" href="https://go.microsoft.com/fwlink/?LinkId=276812">Find more samples online...</a>
+            </p>
+        </div>
+        <iframe id="Frm_Main" ></iframe>
+        <div id="status"></div>
+    </div>
+</body>
+</html>

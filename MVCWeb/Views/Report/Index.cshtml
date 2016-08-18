@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+    @*<script>
+        $(document).ready(function () {
+            $("#infopane").attr("src", '@Url.Action("ReportInfo", "Report")');
+        });
+    </script>*@
+        <script>
+    $(document).ready(function () {
+        $("#infopane").attr("src", '@Url.Action("ReportInfo", "Report")');
+        $("#infopane").load(function () {
+            //$("#infopane").contents().find('#ddlReports').click(function () { alert("test");})
+            $("#infopane").contents().find('#ddlReports').on('change', function () {
+                alert("Test");
+                var val = $(this).val();
+                var x = '@Url.Action("ReportInfo", "Report")' + "/" + val;
+                alert(x);
+                alert($("#searchpane").length);
+                $("#searchpane").attr("src", x);
+            });
+        })
+    });
+    </script>
+    @*<script type="text/javascript">
+        $(document).ready(function () {
+            $("#infopane").attr("src", '@Url.Action("ReportInfo", "Report")');
+            $("#infopane").load(function () {
+                $("#ddlReports").on('change', function () {
+                    alert("hello");
+                });
+            });
+        });
+    </script>*@
+        <script src="~/Scripts/jquery-1.10.2.js"></script>
+    
+    <div id="mainSplitter">
+        <div style="-ms-overflow-y: hidden; overflow-y: hidden; overflow-x: hidden; -ms-overflow-x: hidden;">
+            <iframe id="infopane" src="" style="border-bottom: 0px;
+border-left: 0px; border-top: 0px; border-right: 0px" frameborder="0"></iframe>
+        </div>
+        @*<div style="-ms-overflow-y: hidden; overflow-y: hidden; overflow-x: hidden; -ms-overflow-x: hidden;">
+            <iframe id="infopane1" src="~/Report/ReportInfo" style="border-bottom: 0px;
+border-left: 0px; border-top: 0px; border-right: 0px" frameborder="0"></iframe>
+        </div>*@
+        <div style="-ms-overflow-y: hidden; overflow-y: hidden; overflow-x: hidden; -ms-overflow-x: hidden;">
+            <iframe id="searchpane" src="" style="border-bottom: 0px;
+border-left: 0px; border-top: 0px; border-right: 0px" frameborder="0"></iframe>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</body>
+</html>

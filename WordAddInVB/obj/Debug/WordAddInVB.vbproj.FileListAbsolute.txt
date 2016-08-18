@@ -1,0 +1,14 @@
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\WordAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\WordAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\WordAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\WordAddInVB.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\WordAddInVB.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.Ribbon1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddInVB\obj\Debug\WordAddInVB.vbprojResolveAssemblyReference.cache

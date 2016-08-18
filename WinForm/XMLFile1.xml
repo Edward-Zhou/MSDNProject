@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<myFood xmlns:content ="http:=//www.tempuri.org">
+<content:Foo content:name = "Food=">
+  <content:Foo content:name ="Fruit=" />
+</content:Foo>
+</myFood>

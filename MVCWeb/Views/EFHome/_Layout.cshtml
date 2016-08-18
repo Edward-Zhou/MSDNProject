@@ -1,0 +1,30 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EFHome</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/bundles/modernizer")
+</head>
+<body>
+    <div> 
+        @Html.ActionLink("Contoso University","Index","EFHome")
+        <div>
+            <ul>
+                <li>@Html.ActionLink("Home","Index","EFHome")</li>
+                <li>@Html.ActionLink("About","About","EFHome")</li>
+                <li>@Html.ActionLink("Students","Index","EFStudent")</li>
+                <li>@Html.ActionLink("Courses","Index","EFCourse")</li>
+                <li>@Html.ActionLink("Instructors", "Index", "EFInstructor")</li>
+                <li>@Html.ActionLink("Departments", "Index", "EFDepartment")</li>
+            </ul>
+        </div>
+    </div>
+    @RenderBody()
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

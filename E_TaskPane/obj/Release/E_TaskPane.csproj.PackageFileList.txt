@@ -1,0 +1,1 @@
+bin\Release\E_TaskPane.wsp

@@ -1,0 +1,14 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.csproj.ResolveComReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.MyUserControl.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.Ribbon1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\ExcelAddIn.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\ExcelAddIn.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\ExcelAddIn.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\ExcelAddIn.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Debug\ExcelAddIn.csprojResolveAssemblyReference.cache

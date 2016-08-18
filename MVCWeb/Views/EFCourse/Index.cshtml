@@ -1,0 +1,49 @@
+﻿@model IEnumerable<MVCWeb.Models.EFCourse>
+
+@{
+    ViewBag.Title = "EFCourse";
+    Layout = "~/Views/EFHome/_Layout.cshtml";
+}
+
+<h2>EFCourse</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EFCourseID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credits)
+        </th>
+        <th>Department</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EFCourseID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Credits)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem=>item.EFDepartment.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EFCourseID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EFCourseID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EFCourseID })
+        </td>
+    </tr>
+}
+
+</table>

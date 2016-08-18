@@ -1,0 +1,8 @@
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\bin\Debug\DataTest.exe.config
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\bin\Debug\DataTest.exe
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\bin\Debug\DataTest.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\obj\Debug\DataTest.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\obj\Debug\DataTest.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\obj\Debug\DataTest.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\obj\Debug\DataTest.exe
+D:\Edward\Project\MSDNProject\MSDNProject\DataTest\obj\Debug\DataTest.pdb

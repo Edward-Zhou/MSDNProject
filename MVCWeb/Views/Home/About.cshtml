@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    string Script = "<strong>alert('haacked');</strong>";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional @@information.</p>
+<span>@Script</span>
+@Html.RouteLink("test", new  { action="Index" });
+<a href="/">test1</a>
+

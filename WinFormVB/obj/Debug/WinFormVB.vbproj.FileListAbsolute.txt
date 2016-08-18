@@ -1,0 +1,9 @@
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.exe.config
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.exe
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.exe
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.pdb

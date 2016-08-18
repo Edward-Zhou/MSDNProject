@@ -1,0 +1,15 @@
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\ExcelDoc.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\ExcelDoc.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\ExcelDoc.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\ExcelDoc.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\ExcelDoc.xlsx
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelDoc\obj\Debug\ExcelDoc.ActionsPaneControl1.resources

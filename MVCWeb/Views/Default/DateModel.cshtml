@@ -1,0 +1,38 @@
+﻿@model  MVCWeb.Models.CustomerAccount
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DateModel</title>
+</head>
+<body>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div> 
+        @Html.TextBoxFor(model => model.DOB, new { @Value = "dd/MM/yyyy" })
+
+        @Html.ValidationMessageFor(model => model.DOB)
+        
+        
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+
+}
+    
+    @System.Threading.Thread.CurrentThread.CurrentCulture
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</body>
+</html>

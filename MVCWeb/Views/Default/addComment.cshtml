@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addComment</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="body">
+        <p style="color:red"><strong>Hello Word</strong></p>
+
+        @if (ViewBag.name != null)
+        {            
+          <script type="text/javascript">
+              var x =@Html.Raw(Json.Encode(ViewBag.name));
+              $("#body").append('<p>' + x + '</p>');
+          </script>
+        }
+    </div>
+   
+    @Html.Partial("~/Views/Shared/_CommentPartial.cshtml")
+</body>
+</html>

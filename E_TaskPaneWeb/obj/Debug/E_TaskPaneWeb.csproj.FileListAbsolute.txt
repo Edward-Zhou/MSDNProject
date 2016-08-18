@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\bin\E_TaskPaneWeb.dll.config
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\bin\E_TaskPaneWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\bin\E_TaskPaneWeb.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\obj\Debug\E_TaskPaneWeb.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\obj\Debug\E_TaskPaneWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\E_TaskPaneWeb\obj\Debug\E_TaskPaneWeb.pdb

@@ -1,0 +1,6 @@
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\bin\Content PaneWeb.dll.config
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\bin\Content PaneWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\bin\Content PaneWeb.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\obj\Debug\Content PaneWeb.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\obj\Debug\Content PaneWeb.dll
+D:\Edward\Project\MSDNProject\MSDNProject\Content PaneWeb\obj\Debug\Content PaneWeb.pdb

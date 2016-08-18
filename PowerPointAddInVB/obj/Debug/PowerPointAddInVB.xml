@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PowerPointAddInVB
+</name>
+</assembly>
+<members>
+<member name="P:PowerPointAddInVB.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PowerPointAddInVB.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PowerPointAddInVB.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:PowerPointAddInVB.ThisAddIn.#ctor(Microsoft.Office.Tools.Factory,System.IServiceProvider)">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.Initialize">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.FinishInitialization">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.InitializeDataBindings">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.InitializeCachedData">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.InitializeData">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.BindToData">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.IsCached(System.String)">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.BeginInitialization">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.EndInitialization">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.InitializeControls">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.InitializeComponents">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:PowerPointAddInVB.ThisAddIn.OnShutdown">
+</member><member name="T:PowerPointAddInVB.ThisAddIn">
+</member><member name="M:PowerPointAddInVB.Globals.#ctor">
+</member><member name="T:PowerPointAddInVB.Globals">
+</member><member name="M:PowerPointAddInVB.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:PowerPointAddInVB.ThisRibbonCollection">
+</member>
+</members>
+</doc>

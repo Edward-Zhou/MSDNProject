@@ -1,0 +1,12 @@
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\PowerPointAddIn1.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\PowerPointAddIn1.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\PowerPointAddIn1.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\PowerPointAddIn1.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn1\obj\Debug\PowerPointAddIn1.Ribbon2.resources

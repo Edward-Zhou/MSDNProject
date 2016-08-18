@@ -1,0 +1,12 @@
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\PowerPointAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\PowerPointAddInVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\PowerPointAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\PowerPointAddInVB.dll.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\PowerPointAddInVB.vsto
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Release\PowerPointAddInVB.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Release\PowerPointAddInVB.vbproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Release\PowerPointAddInVB.dll
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Release\PowerPointAddInVB.xml
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddInVB\obj\Release\PowerPointAddInVB.pdb

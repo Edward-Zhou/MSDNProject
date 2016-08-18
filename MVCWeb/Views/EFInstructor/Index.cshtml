@@ -1,0 +1,118 @@
+﻿@model MVCWeb.ViewModels.EFInstructorIndexData
+
+@{
+    ViewBag.Title = "EFInstructors";
+    Layout = "~/Views/EFHome/_Layout.cshtml";
+}
+
+<h2>EFInstructors</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Last Name
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Hire Date
+        </th>
+        <th>
+            Office
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.EFInstructors) {
+    string selectedRow = "";
+    if (item.ID == ViewBag.InstructorID)
+    {
+        selectedRow = "success";
+    }
+    <tr class="@selectedRow">
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstMidName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HireDate)
+        </td>
+        <td>
+            @if (item.EFOfficeAssignment != null)
+            { 
+                @item.EFOfficeAssignment.Location
+            }
+        </td>
+        <td>
+            @Html.ActionLink("Select", "Index", new {id=item.ID })|
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
+@if (Model.EFCourses != null)
+{ 
+    <h3>EFCourses Taught by Selected Instructor</h3>
+    <table class="table">
+        <tr>
+            <th></th>
+            <th>Number</th>
+            <th>Title</th>
+            <th>Department</th>
+        </tr>
+        @foreach (var item in Model.EFCourses)
+        {
+            string selectedRow = "";
+            if (item.EFCourseID == ViewBag.CourseID)
+            {
+                selectedRow = "success";
+            }
+            <tr class="@selectedRow">
+                <td>
+                    @Html.ActionLink("Select", "Index", new { CourseID = item.EFCourseID })
+                </td>
+                <td>
+                    @item.EFCourseID
+                </td>
+                <td>
+                    @item.Title
+                </td>
+                <td>
+                    @item.EFDepartment.Name
+                </td>
+            </tr>
+        }
+    </table>
+}
+@if (Model.EFEnrollments != null)
+{
+    <h3>
+        Students Enrolled in Selected Course
+    </h3>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Grade</th>
+        </tr>
+        @foreach (var item in Model.EFEnrollments)
+        {
+            <tr>
+                <td>
+                    @item.EFStudent.FullName
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Grade)
+                </td>
+            </tr>
+        }
+    </table>
+}

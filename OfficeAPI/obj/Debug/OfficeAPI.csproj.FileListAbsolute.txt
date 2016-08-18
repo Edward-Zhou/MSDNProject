@@ -1,0 +1,15 @@
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Debug\OfficeAPI.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Debug\OfficeAPI.exe.config
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Debug\OfficeAPI.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Debug\OfficeAPI.application
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\Interop.Microsoft.Office.Interop.OneNote.dll
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.csproj.ResolveComReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.Form1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.application
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Debug\OfficeAPI.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Debug\OfficeAPI.csprojResolveAssemblyReference.cache

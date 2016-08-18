@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVCWeb.Models.Item>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<script type="text/javascript">
+    //auto post checkbox
+    function myFunction(id) {
+        var status = document.getElementById("chkShow_" + id).checked;
+        window.location.href = '/Default/updatevat?ID=' + id + '&status=' + status;
+    }
+
+    //auto post drobdownlist
+    function mydropdown(id) {
+        var discuount = document.getElementById("ddl" + id).select;
+        //window.location.href = '/Default/updatdisc?ID=' + id + '&discuount=' + discuount;
+    }
+</script>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @foreach(var item in Model)
+    { 
+        //drobdownlist
+        @Html.DropDownList("ddl" + item.Id, new SelectList(new[] { "1", "2", "3", "4", "5" }), new { onchange = "mydropdown(" + item.Id + ")" })
+
+        //Checkbox
+
+        if (true)
+        {
+        <p>
+
+            @Html.CheckBox("check", new { id = "chkShow_" + item.Id, @checked = "checked", @class = "checker", @onchange = "myFunction(" + item.Id + ")" })
+        </p>
+        }
+        else
+        {
+        <p>
+
+            @Html.CheckBox("check", new { id = "chkShow_" + item.Id, @class = "checker", @onchange = "myFunction(" + item.Id + ")" });
+
+        </p>
+        }
+
+    }
+</head>
+<body>
+    <div> 
+
+    </div>
+</body>
+</html>

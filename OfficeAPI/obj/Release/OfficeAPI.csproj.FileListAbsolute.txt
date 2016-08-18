@@ -1,0 +1,15 @@
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.csproj.ResolveComReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.Properties.Resources.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.csproj.GenerateResource.Cache
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Release\OfficeAPI.exe.config
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Release\OfficeAPI.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Release\OfficeAPI.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.exe
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Release\OfficeAPI.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\bin\Release\OfficeAPI.application
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.application
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\Interop.Microsoft.Office.Interop.OneNote.dll
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.Form1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\OfficeAPI\obj\Release\OfficeAPI.csprojResolveAssemblyReference.cache

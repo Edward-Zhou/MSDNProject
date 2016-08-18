@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WordAddInVB
+</name>
+</assembly>
+<members>
+<member name="M:WordAddInVB.ThisAddIn.#ctor(Microsoft.Office.Tools.Word.ApplicationFactory,System.IServiceProvider)">
+</member><member name="M:WordAddInVB.ThisAddIn.Initialize">
+</member><member name="M:WordAddInVB.ThisAddIn.FinishInitialization">
+</member><member name="M:WordAddInVB.ThisAddIn.InitializeDataBindings">
+</member><member name="M:WordAddInVB.ThisAddIn.InitializeCachedData">
+</member><member name="M:WordAddInVB.ThisAddIn.InitializeData">
+</member><member name="M:WordAddInVB.ThisAddIn.BindToData">
+</member><member name="M:WordAddInVB.ThisAddIn.StartCaching(System.String)">
+</member><member name="M:WordAddInVB.ThisAddIn.StopCaching(System.String)">
+</member><member name="M:WordAddInVB.ThisAddIn.IsCached(System.String)">
+</member><member name="M:WordAddInVB.ThisAddIn.BeginInitialization">
+</member><member name="M:WordAddInVB.ThisAddIn.EndInitialization">
+</member><member name="M:WordAddInVB.ThisAddIn.InitializeControls">
+</member><member name="M:WordAddInVB.ThisAddIn.InitializeComponents">
+</member><member name="M:WordAddInVB.ThisAddIn.NeedsFill(System.String)">
+</member><member name="M:WordAddInVB.ThisAddIn.OnShutdown">
+</member><member name="T:WordAddInVB.ThisAddIn">
+</member><member name="M:WordAddInVB.Globals.#ctor">
+</member><member name="T:WordAddInVB.Globals">
+</member><member name="M:WordAddInVB.ThisRibbonCollection.#ctor(Microsoft.Office.Tools.Ribbon.RibbonFactory)">
+</member><member name="T:WordAddInVB.ThisRibbonCollection">
+</member><member name="P:WordAddInVB.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:WordAddInVB.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:WordAddInVB.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

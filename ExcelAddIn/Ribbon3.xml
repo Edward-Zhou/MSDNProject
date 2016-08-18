@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+
+  <commands>
+    <command idMso="FileSave" onAction="DocumentMarkAsFinal"/>
+    <command idMso="FileSaveAs" onAction="FileSaveAs"/>
+  </commands>
+  <ribbon>
+    <tabs>
+      <tab idMso="TabAddIns">
+        <group id="MyGroup"
+               label="My Group">
+          <!--<button id="btnFunction" image='D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\Excel.PNG' size='large' onAction='OnFunctionButtonPressed'   getLabel='GetLabel'  screentip='My button tooltip' supertip='Desription my button - supertooltil ' />
+          <button id="btnFunction1" image='D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\Excel.PNG'  onAction='OnFunctionButtonPressed'   getLabel='GetLabel'  screentip='My button tooltip' supertip='Desription my button - supertooltil ' />-->
+          <button id="btnFunction" getLabel="GetLabel"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

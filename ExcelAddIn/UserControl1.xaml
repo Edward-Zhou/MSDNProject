@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ExcelAddIn.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="MyGrid">
+        <Button Name="MyButton" Content="Click" Width="100" HorizontalAlignment="Left" PreviewMouseRightButtonDown="MyButton_PreviewMouseRightButtonDown">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Name="cmDuplicateWB" Click="cmDuplicateWB_Click"  ToolTip="Duplicate the selected workbook" Header="Duplicate" Icon="Save"/>
+                    <MenuItem Name="cmRenameWB" Click="cmRenameWB_Click" ToolTip="Rename the selected workbook" Header="Rename" Icon="Save" Tag="F2"/>
+                    <MenuItem Name="cmShowFolder" Click="cmShowFolder_Click" ToolTip="Open the file in the file explorer" Header="Show in Folder" Icon="Save"/>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+    </Grid>
+</UserControl>

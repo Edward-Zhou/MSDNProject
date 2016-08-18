@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@using MVCWeb.Helpers
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MainView</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#infopane").attr("src", '@Url.Action("ReportInfo", "Report")');
+    });
+    </script>
+</head>
+<body>
+    <div id="mainSplitter">
+        <div style="-ms-overflow-y: hidden; overflow-y: hidden; overflow-x: hidden; -ms-overflow-x: hidden;">
+            <iframe id="infopane" src="" style="border-bottom: 0px;
+border-left: 0px; border-top: 0px; border-right: 0px" frameborder="0"></iframe>
+        </div>
+        <div style="-ms-overflow-y: hidden; overflow-y: hidden; overflow-x: hidden; -ms-overflow-x: hidden;">
+            <iframe id="searchpane" src="" style="border-bottom: 0px;
+border-left: 0px; border-top: 0px; border-right: 0px" frameborder="0"></iframe>
+        </div>
+        <div>
+            <label id="lab"></label>
+            
+        </div>
+        <p>@ViewBag.SendCodeViewModel</p>
+        <p>@ViewBag.SendCodeViewModel1</p>
+
+        @Html.ContentBlock(new ISSCStyle() { color="Blue",Class="",Text="Hello World"});
+        @*@Html.Partial("_MainViewPartialPage")*@
+    </div>   
+</body>
+</html>
