@@ -69,3 +69,12 @@ function getBody() {
     })
 
 }
+
+function openURL() {
+    window.open("http://www.w3schools.com");
+}
+
+function runScript() {
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.run("https://www.microsoft.com");
+}

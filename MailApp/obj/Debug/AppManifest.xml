@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="MailApp"
-     ProductID="{db10fbe8-e1d5-483d-95cd-ad4fd2e5cb2e}"
+     ProductID="{dadfa081-73e0-400f-abc6-f7d0a94f458d}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >

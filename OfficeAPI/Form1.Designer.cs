@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.FileCopyExcel = new System.Windows.Forms.Button();
             this.OpenBtn = new System.Windows.Forms.Button();
             this.PivotTableFilter = new System.Windows.Forms.Button();
             this.FindReplaceExcel = new System.Windows.Forms.Button();
@@ -44,12 +45,20 @@
             this.CreateShape = new System.Windows.Forms.Button();
             this.Savebtn = new System.Windows.Forms.Button();
             this.WordgroupBox2 = new System.Windows.Forms.GroupBox();
+            this.DnsMethod = new System.Windows.Forms.Button();
+            this.setFont = new System.Windows.Forms.Button();
+            this.RequestAPI = new System.Windows.Forms.Button();
+            this.PPTImage = new System.Windows.Forms.Button();
             this.AddBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.setOptions = new System.Windows.Forms.Button();
             this.GoToBookMark = new System.Windows.Forms.Button();
             this.OpenXml = new System.Windows.Forms.GroupBox();
+            this.CopyWorkbook = new System.Windows.Forms.Button();
+            this.ChangeField = new System.Windows.Forms.Button();
+            this.ExcelColumn = new System.Windows.Forms.Button();
+            this.InsertImg = new System.Windows.Forms.Button();
             this.ImageATL = new System.Windows.Forms.Button();
             this.CoreFileProperties = new System.Windows.Forms.Button();
             this.PPTInsertShape = new System.Windows.Forms.Button();
@@ -77,6 +86,9 @@
             this.StyleSet = new System.Windows.Forms.Button();
             this.HtmlToWord = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.OneNoteCreatePage = new System.Windows.Forms.Button();
+            this.OneNotePage = new System.Windows.Forms.Button();
+            this.SMTPbtn = new System.Windows.Forms.Button();
             this.OneNotebtn = new System.Windows.Forms.Button();
             this.CreateEmail = new System.Windows.Forms.Button();
             this.AcceptRevisionsbtn = new System.Windows.Forms.Button();
@@ -91,7 +103,7 @@
             this.getCharacters = new System.Windows.Forms.Button();
             this.FileShape = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.InsertImg = new System.Windows.Forms.Button();
+            this.DoGetHostAddresses = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.WordgroupBox2.SuspendLayout();
             this.OpenXml.SuspendLayout();
@@ -101,6 +113,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.FileCopyExcel);
             this.groupBox1.Controls.Add(this.OpenBtn);
             this.groupBox1.Controls.Add(this.PivotTableFilter);
             this.groupBox1.Controls.Add(this.FindReplaceExcel);
@@ -121,6 +134,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Excel";
+            // 
+            // FileCopyExcel
+            // 
+            this.FileCopyExcel.Location = new System.Drawing.Point(645, 19);
+            this.FileCopyExcel.Name = "FileCopyExcel";
+            this.FileCopyExcel.Size = new System.Drawing.Size(113, 23);
+            this.FileCopyExcel.TabIndex = 15;
+            this.FileCopyExcel.Text = "FileCopyExcel";
+            this.FileCopyExcel.UseVisualStyleBackColor = true;
+            this.FileCopyExcel.Click += new System.EventHandler(this.FileCopyExcel_Click);
             // 
             // OpenBtn
             // 
@@ -264,6 +287,11 @@
             // 
             // WordgroupBox2
             // 
+            this.WordgroupBox2.Controls.Add(this.DoGetHostAddresses);
+            this.WordgroupBox2.Controls.Add(this.DnsMethod);
+            this.WordgroupBox2.Controls.Add(this.setFont);
+            this.WordgroupBox2.Controls.Add(this.RequestAPI);
+            this.WordgroupBox2.Controls.Add(this.PPTImage);
             this.WordgroupBox2.Controls.Add(this.AddBtn);
             this.WordgroupBox2.Controls.Add(this.button3);
             this.WordgroupBox2.Controls.Add(this.button1);
@@ -275,6 +303,45 @@
             this.WordgroupBox2.TabIndex = 1;
             this.WordgroupBox2.TabStop = false;
             this.WordgroupBox2.Text = "Word";
+            // 
+            // DnsMethod
+            // 
+            this.DnsMethod.Location = new System.Drawing.Point(721, 19);
+            this.DnsMethod.Name = "DnsMethod";
+            this.DnsMethod.Size = new System.Drawing.Size(75, 23);
+            this.DnsMethod.TabIndex = 12;
+            this.DnsMethod.Text = "DnsMethod";
+            this.DnsMethod.UseVisualStyleBackColor = true;
+            this.DnsMethod.Click += new System.EventHandler(this.DnsMethod_Click);
+            // 
+            // setFont
+            // 
+            this.setFont.Location = new System.Drawing.Point(250, 19);
+            this.setFont.Name = "setFont";
+            this.setFont.Size = new System.Drawing.Size(75, 23);
+            this.setFont.TabIndex = 11;
+            this.setFont.Text = "setFont";
+            this.setFont.UseVisualStyleBackColor = true;
+            this.setFont.Click += new System.EventHandler(this.setFont_Click);
+            // 
+            // RequestAPI
+            // 
+            this.RequestAPI.Location = new System.Drawing.Point(645, 19);
+            this.RequestAPI.Name = "RequestAPI";
+            this.RequestAPI.Size = new System.Drawing.Size(75, 23);
+            this.RequestAPI.TabIndex = 10;
+            this.RequestAPI.Text = "RequestAPI";
+            this.RequestAPI.UseVisualStyleBackColor = true;
+            this.RequestAPI.Click += new System.EventHandler(this.RequestAPI_Click);
+            // 
+            // PPTImage
+            // 
+            this.PPTImage.Location = new System.Drawing.Point(564, 19);
+            this.PPTImage.Name = "PPTImage";
+            this.PPTImage.Size = new System.Drawing.Size(75, 23);
+            this.PPTImage.TabIndex = 9;
+            this.PPTImage.Text = "PPTImage";
+            this.PPTImage.UseVisualStyleBackColor = true;
             // 
             // AddBtn
             // 
@@ -328,6 +395,9 @@
             // 
             // OpenXml
             // 
+            this.OpenXml.Controls.Add(this.CopyWorkbook);
+            this.OpenXml.Controls.Add(this.ChangeField);
+            this.OpenXml.Controls.Add(this.ExcelColumn);
             this.OpenXml.Controls.Add(this.InsertImg);
             this.OpenXml.Controls.Add(this.ImageATL);
             this.OpenXml.Controls.Add(this.CoreFileProperties);
@@ -360,6 +430,46 @@
             this.OpenXml.TabIndex = 1;
             this.OpenXml.TabStop = false;
             this.OpenXml.Text = "OpenXml";
+            // 
+            // CopyWorkbook
+            // 
+            this.CopyWorkbook.Location = new System.Drawing.Point(780, 106);
+            this.CopyWorkbook.Name = "CopyWorkbook";
+            this.CopyWorkbook.Size = new System.Drawing.Size(93, 23);
+            this.CopyWorkbook.TabIndex = 31;
+            this.CopyWorkbook.Text = "CopyWorkbook";
+            this.CopyWorkbook.UseVisualStyleBackColor = true;
+            this.CopyWorkbook.Click += new System.EventHandler(this.CopyWorkbook_Click);
+            // 
+            // ChangeField
+            // 
+            this.ChangeField.Location = new System.Drawing.Point(699, 106);
+            this.ChangeField.Name = "ChangeField";
+            this.ChangeField.Size = new System.Drawing.Size(75, 23);
+            this.ChangeField.TabIndex = 30;
+            this.ChangeField.Text = "ChangeField";
+            this.ChangeField.UseVisualStyleBackColor = true;
+            this.ChangeField.Click += new System.EventHandler(this.ChangeField_Click);
+            // 
+            // ExcelColumn
+            // 
+            this.ExcelColumn.Location = new System.Drawing.Point(802, 77);
+            this.ExcelColumn.Name = "ExcelColumn";
+            this.ExcelColumn.Size = new System.Drawing.Size(97, 23);
+            this.ExcelColumn.TabIndex = 26;
+            this.ExcelColumn.Text = "ExcelColumn";
+            this.ExcelColumn.UseVisualStyleBackColor = true;
+            this.ExcelColumn.Click += new System.EventHandler(this.ExcelColumn_Click);
+            // 
+            // InsertImg
+            // 
+            this.InsertImg.Location = new System.Drawing.Point(699, 77);
+            this.InsertImg.Name = "InsertImg";
+            this.InsertImg.Size = new System.Drawing.Size(97, 23);
+            this.InsertImg.TabIndex = 25;
+            this.InsertImg.Text = "InsertImg";
+            this.InsertImg.UseVisualStyleBackColor = true;
+            this.InsertImg.Click += new System.EventHandler(this.InsertImg_Click);
             // 
             // ImageATL
             // 
@@ -623,6 +733,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.OneNoteCreatePage);
+            this.groupBox2.Controls.Add(this.OneNotePage);
+            this.groupBox2.Controls.Add(this.SMTPbtn);
             this.groupBox2.Controls.Add(this.OneNotebtn);
             this.groupBox2.Controls.Add(this.CreateEmail);
             this.groupBox2.Location = new System.Drawing.Point(24, 203);
@@ -631,6 +744,36 @@
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Outlook";
+            // 
+            // OneNoteCreatePage
+            // 
+            this.OneNoteCreatePage.Location = new System.Drawing.Point(331, 20);
+            this.OneNoteCreatePage.Name = "OneNoteCreatePage";
+            this.OneNoteCreatePage.Size = new System.Drawing.Size(119, 23);
+            this.OneNoteCreatePage.TabIndex = 13;
+            this.OneNoteCreatePage.Text = "OneNoteCreatePage";
+            this.OneNoteCreatePage.UseVisualStyleBackColor = true;
+            this.OneNoteCreatePage.Click += new System.EventHandler(this.OneNoteCreatePage_Click);
+            // 
+            // OneNotePage
+            // 
+            this.OneNotePage.Location = new System.Drawing.Point(250, 20);
+            this.OneNotePage.Name = "OneNotePage";
+            this.OneNotePage.Size = new System.Drawing.Size(75, 23);
+            this.OneNotePage.TabIndex = 12;
+            this.OneNotePage.Text = "OneNote";
+            this.OneNotePage.UseVisualStyleBackColor = true;
+            this.OneNotePage.Click += new System.EventHandler(this.OneNotePage_Click);
+            // 
+            // SMTPbtn
+            // 
+            this.SMTPbtn.Location = new System.Drawing.Point(168, 19);
+            this.SMTPbtn.Name = "SMTPbtn";
+            this.SMTPbtn.Size = new System.Drawing.Size(75, 23);
+            this.SMTPbtn.TabIndex = 11;
+            this.SMTPbtn.Text = "SMTP";
+            this.SMTPbtn.UseVisualStyleBackColor = true;
+            this.SMTPbtn.Click += new System.EventHandler(this.SMTPbtn_Click);
             // 
             // OneNotebtn
             // 
@@ -769,15 +912,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // InsertImg
+            // DoGetHostAddresses
             // 
-            this.InsertImg.Location = new System.Drawing.Point(699, 77);
-            this.InsertImg.Name = "InsertImg";
-            this.InsertImg.Size = new System.Drawing.Size(97, 23);
-            this.InsertImg.TabIndex = 25;
-            this.InsertImg.Text = "InsertImg";
-            this.InsertImg.UseVisualStyleBackColor = true;
-            this.InsertImg.Click += new System.EventHandler(this.InsertImg_Click);
+            this.DoGetHostAddresses.Location = new System.Drawing.Point(803, 20);
+            this.DoGetHostAddresses.Name = "DoGetHostAddresses";
+            this.DoGetHostAddresses.Size = new System.Drawing.Size(115, 23);
+            this.DoGetHostAddresses.TabIndex = 13;
+            this.DoGetHostAddresses.Text = "DoGetHostAddresses";
+            this.DoGetHostAddresses.UseVisualStyleBackColor = true;
+            this.DoGetHostAddresses.Click += new System.EventHandler(this.DoGetHostAddresses_Click);
             // 
             // Form1
             // 
@@ -873,6 +1016,18 @@
         private System.Windows.Forms.Button CoreFileProperties;
         private System.Windows.Forms.Button ImageATL;
         private System.Windows.Forms.Button InsertImg;
+        private System.Windows.Forms.Button ExcelColumn;
+        private System.Windows.Forms.Button SMTPbtn;
+        private System.Windows.Forms.Button ChangeField;
+        private System.Windows.Forms.Button PPTImage;
+        private System.Windows.Forms.Button OneNotePage;
+        private System.Windows.Forms.Button RequestAPI;
+        private System.Windows.Forms.Button OneNoteCreatePage;
+        private System.Windows.Forms.Button FileCopyExcel;
+        private System.Windows.Forms.Button CopyWorkbook;
+        private System.Windows.Forms.Button setFont;
+        private System.Windows.Forms.Button DnsMethod;
+        private System.Windows.Forms.Button DoGetHostAddresses;
 
     }
 }

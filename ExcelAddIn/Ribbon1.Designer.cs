@@ -64,6 +64,11 @@
             this.TopFilter = this.Factory.CreateRibbonButton();
             this.showForm = this.Factory.CreateRibbonButton();
             this.comboBox1 = this.Factory.CreateRibbonComboBox();
+            this.RegisterEvent = this.Factory.CreateRibbonButton();
+            this.ExportToPdf = this.Factory.CreateRibbonButton();
+            this.AddHyperlink = this.Factory.CreateRibbonButton();
+            this.CreateList = this.Factory.CreateRibbonButton();
+            this.ActiveTab = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -103,6 +108,11 @@
             this.group1.Items.Add(this.TopFilter);
             this.group1.Items.Add(this.showForm);
             this.group1.Items.Add(this.comboBox1);
+            this.group1.Items.Add(this.RegisterEvent);
+            this.group1.Items.Add(this.ExportToPdf);
+            this.group1.Items.Add(this.AddHyperlink);
+            this.group1.Items.Add(this.CreateList);
+            this.group1.Items.Add(this.ActiveTab);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
@@ -270,6 +280,37 @@
             this.comboBox1.Label = "comboBox1";
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.ShowLabel = false;
+            this.comboBox1.Text = null;
+            // 
+            // RegisterEvent
+            // 
+            this.RegisterEvent.Label = "RegisterEvent";
+            this.RegisterEvent.Name = "RegisterEvent";
+            this.RegisterEvent.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.RegisterEvent_Click);
+            // 
+            // ExportToPdf
+            // 
+            this.ExportToPdf.Label = "ExportToPdf";
+            this.ExportToPdf.Name = "ExportToPdf";
+            this.ExportToPdf.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.ExportToPdf_Click);
+            // 
+            // AddHyperlink
+            // 
+            this.AddHyperlink.Label = "AddHyperlink";
+            this.AddHyperlink.Name = "AddHyperlink";
+            this.AddHyperlink.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.AddHyperlink_Click);
+            // 
+            // CreateList
+            // 
+            this.CreateList.Label = "CreateList";
+            this.CreateList.Name = "CreateList";
+            this.CreateList.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.CreateList_Click);
+            // 
+            // ActiveTab
+            // 
+            this.ActiveTab.Label = "ActiveTab";
+            this.ActiveTab.Name = "ActiveTab";
+            this.ActiveTab.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.ActiveTab_Click);
             // 
             // Ribbon1
             // 
@@ -315,6 +356,11 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton TopFilter;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton showForm;
         internal Microsoft.Office.Tools.Ribbon.RibbonComboBox comboBox1;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton RegisterEvent;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton ExportToPdf;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton AddHyperlink;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton CreateList;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton ActiveTab;
     }
 
     partial class ThisRibbonCollection

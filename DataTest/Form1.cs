@@ -177,5 +177,45 @@ namespace DataTest
                 MessageBox.Show("Deleted");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ImplementIShout i = new ImplementIShout();
+            i.ShoutMethod();
+            XiaoMing x = new XiaoMing();
+            x.name = "new xiao ming";
+            Console.WriteLine(x.name);
+        }
+    }
+    public interface IShout
+    {
+        //定义方法
+        void ShoutMethod();
+    }
+    class ImplementIShout : IShout
+    {
+        public void ShoutMethod()
+        {
+            Console.WriteLine("This is Shout method!");
+        }
+    }
+    abstract class Person
+    {
+        public abstract string name { get; set; }
+    }
+    class XiaoMing : Person
+    {
+        string _name = "xiaoming";
+        public override string name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name=value;
+            }
+        }
     }
 }

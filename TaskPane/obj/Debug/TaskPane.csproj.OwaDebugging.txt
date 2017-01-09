@@ -1,7 +1,7 @@
-True
+False
 9cc9a415-f0cb-444c-afa5-2fda90a88505abc07d68-9fba-4acb-a56d-dfaef37ba907
 {a5244233-0e83-4a20-8e5a-899ee6264908}{50c06d32-2404-4cc1-9ca1-a9c2be3ad790}
 {9615266e-8e80-4dba-b2e0-5cd22e336356}
 1.0.0.0
-TaskPaneBook1.xlsx
+TaskPane
 _layouts/15/

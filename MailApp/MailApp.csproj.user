@@ -8,7 +8,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
         <ProjectStore>
-          <EmailAddressForExchangeDeploymentSettings>v-tazho@officedevmsdn.onmicrosoft.com </EmailAddressForExchangeDeploymentSettings>
+          <EmailAddressForExchangeDeploymentSettings>v-tazho@eofficedev.onmicrosoft.com</EmailAddressForExchangeDeploymentSettings>
         </ProjectStore>
       </FlavorProperties>
     </VisualStudio>

@@ -34,6 +34,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl1 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl2 = this.Factory.CreateRibbonDropDownItem();
+            Microsoft.Office.Tools.Ribbon.RibbonDropDownItem ribbonDropDownItemImpl3 = this.Factory.CreateRibbonDropDownItem();
             this.tab1 = this.Factory.CreateRibbonTab();
             this.group1 = this.Factory.CreateRibbonGroup();
             this.ShapeFormat = this.Factory.CreateRibbonButton();
@@ -52,6 +55,14 @@
             this.SaveAsTemplate = this.Factory.CreateRibbonButton();
             this.headerFooter = this.Factory.CreateRibbonButton();
             this.MoveShape = this.Factory.CreateRibbonButton();
+            this.InsertXMLbtn = this.Factory.CreateRibbonButton();
+            this.InsertAddInField = this.Factory.CreateRibbonButton();
+            this.getAddInField = this.Factory.CreateRibbonButton();
+            this.WordArtbtn = this.Factory.CreateRibbonButton();
+            this.Restrictionbtn = this.Factory.CreateRibbonButton();
+            this.paraID = this.Factory.CreateRibbonButton();
+            this.ColorCombobox = this.Factory.CreateRibbonComboBox();
+            this.SetFont = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -80,6 +91,14 @@
             this.group1.Items.Add(this.SaveAsTemplate);
             this.group1.Items.Add(this.headerFooter);
             this.group1.Items.Add(this.MoveShape);
+            this.group1.Items.Add(this.InsertXMLbtn);
+            this.group1.Items.Add(this.InsertAddInField);
+            this.group1.Items.Add(this.getAddInField);
+            this.group1.Items.Add(this.WordArtbtn);
+            this.group1.Items.Add(this.Restrictionbtn);
+            this.group1.Items.Add(this.paraID);
+            this.group1.Items.Add(this.ColorCombobox);
+            this.group1.Items.Add(this.SetFont);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
@@ -179,6 +198,60 @@
             this.MoveShape.Name = "MoveShape";
             this.MoveShape.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.MoveShape_Click);
             // 
+            // InsertXMLbtn
+            // 
+            this.InsertXMLbtn.Label = "InsertXML";
+            this.InsertXMLbtn.Name = "InsertXMLbtn";
+            this.InsertXMLbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.InsertXMLbtn_Click);
+            // 
+            // InsertAddInField
+            // 
+            this.InsertAddInField.Label = "InsertAddInField";
+            this.InsertAddInField.Name = "InsertAddInField";
+            this.InsertAddInField.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.InsertAddInField_Click);
+            // 
+            // getAddInField
+            // 
+            this.getAddInField.Label = "getAddInField";
+            this.getAddInField.Name = "getAddInField";
+            this.getAddInField.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.getAddInField_Click);
+            // 
+            // WordArtbtn
+            // 
+            this.WordArtbtn.Label = "WordArt";
+            this.WordArtbtn.Name = "WordArtbtn";
+            this.WordArtbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.WordArtbtn_Click);
+            // 
+            // Restrictionbtn
+            // 
+            this.Restrictionbtn.Label = "Restriction";
+            this.Restrictionbtn.Name = "Restrictionbtn";
+            this.Restrictionbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Restrictionbtn_Click);
+            // 
+            // paraID
+            // 
+            this.paraID.Label = "paraID";
+            this.paraID.Name = "paraID";
+            this.paraID.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.paraID_Click);
+            // 
+            // ColorCombobox
+            // 
+            ribbonDropDownItemImpl1.Label = "Calibri";
+            ribbonDropDownItemImpl2.Label = "Calibri Light";
+            ribbonDropDownItemImpl3.Label = "Item2";
+            this.ColorCombobox.Items.Add(ribbonDropDownItemImpl1);
+            this.ColorCombobox.Items.Add(ribbonDropDownItemImpl2);
+            this.ColorCombobox.Items.Add(ribbonDropDownItemImpl3);
+            this.ColorCombobox.Label = "Color";
+            this.ColorCombobox.Name = "ColorCombobox";
+            this.ColorCombobox.Text = null;
+            // 
+            // SetFont
+            // 
+            this.SetFont.Label = "SetFont";
+            this.SetFont.Name = "SetFont";
+            this.SetFont.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SetFont_Click);
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -212,6 +285,14 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton SaveAsTemplate;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton headerFooter;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton MoveShape;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton InsertXMLbtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton InsertAddInField;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton getAddInField;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton WordArtbtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Restrictionbtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton paraID;
+        internal Microsoft.Office.Tools.Ribbon.RibbonComboBox ColorCombobox;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton SetFont;
     }
 
     partial class ThisRibbonCollection

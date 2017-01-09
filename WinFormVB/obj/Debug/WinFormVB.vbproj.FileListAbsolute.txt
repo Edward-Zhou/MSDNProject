@@ -7,3 +7,12 @@ D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.vbproj.G
 D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.exe
 D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.xml
 D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\WinFormVB.application
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.Form1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.exe.manifest
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.application
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\Test1.accdb
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\Newtonsoft.Json.dll
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\bin\Debug\Newtonsoft.Json.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WinFormVB\obj\Debug\WinFormVB.vbprojResolveAssemblyReference.cache

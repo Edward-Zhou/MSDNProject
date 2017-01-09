@@ -8,6 +8,7 @@ D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\bin\Debug\log4net.dll
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\bin\Debug\log4net.xml
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.xml
+D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.csprojResolveAssemblyReference.cache
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.Form1.resources
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.MyUserControl.resources
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.Properties.Resources.resources
@@ -15,4 +16,3 @@ D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.Ribbon1.
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.csproj.GenerateResource.Cache
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.dll
 D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.pdb
-D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\obj\Debug\WordAddIn.csprojResolveAssemblyReference.cache

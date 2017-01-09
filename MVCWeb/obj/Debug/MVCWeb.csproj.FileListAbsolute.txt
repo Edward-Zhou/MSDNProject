@@ -58,3 +58,4 @@ D:\Edward\Project\MSDNProject\MSDNProject\MVCWeb\bin\PagedList.xml
 D:\Edward\Project\MSDNProject\MSDNProject\MVCWeb\bin\PagedList.Mvc.xml
 D:\Edward\Project\MSDNProject\MSDNProject\MVCWeb\bin\NetSpell.SpellChecker.dll
 D:\Edward\Project\MSDNProject\MSDNProject\MVCWeb\bin\RichTextEditor.dll
+D:\Edward\Project\MSDNProject\MSDNProject\MVCWeb\obj\Debug\MVCWeb.csprojResolveAssemblyReference.cache

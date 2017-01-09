@@ -225,6 +225,10 @@
     </Compile>
     <Compile Include="ViewModels\EFInstructorIndexData.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -1475,6 +1479,7 @@
     <Content Include="Views\FilesBak\Index.cshtml" />
     <Content Include="uploads\Guest\_cache\_cache_image.cache" />
     <Content Include="uploads\_cache\_cache_image.cache" />
+    <Content Include="WebService1.asmx" />
     <Content Include="_PartialPage1.cshtml" />
   </ItemGroup>
   <ItemGroup>

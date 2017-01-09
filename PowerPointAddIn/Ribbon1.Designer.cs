@@ -41,6 +41,11 @@
             this.addTaskPane = this.Factory.CreateRibbonButton();
             this.txtRange = this.Factory.CreateRibbonButton();
             this.TaskPaneWindows = this.Factory.CreateRibbonButton();
+            this.InsertImg = this.Factory.CreateRibbonButton();
+            this.Quit = this.Factory.CreateRibbonButton();
+            this.Showbtn = this.Factory.CreateRibbonButton();
+            this.ShowDialogbtn = this.Factory.CreateRibbonButton();
+            this.GetSelection = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -58,6 +63,11 @@
             this.group1.Items.Add(this.addTaskPane);
             this.group1.Items.Add(this.txtRange);
             this.group1.Items.Add(this.TaskPaneWindows);
+            this.group1.Items.Add(this.InsertImg);
+            this.group1.Items.Add(this.Quit);
+            this.group1.Items.Add(this.Showbtn);
+            this.group1.Items.Add(this.ShowDialogbtn);
+            this.group1.Items.Add(this.GetSelection);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
@@ -91,6 +101,36 @@
             this.TaskPaneWindows.Name = "TaskPaneWindows";
             this.TaskPaneWindows.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.TaskPaneWindows_Click);
             // 
+            // InsertImg
+            // 
+            this.InsertImg.Label = "InsertImg";
+            this.InsertImg.Name = "InsertImg";
+            this.InsertImg.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.InsertImg_Click);
+            // 
+            // Quit
+            // 
+            this.Quit.Label = "Quit";
+            this.Quit.Name = "Quit";
+            this.Quit.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Quit_Click);
+            // 
+            // Showbtn
+            // 
+            this.Showbtn.Label = "Show";
+            this.Showbtn.Name = "Showbtn";
+            this.Showbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.Showbtn_Click);
+            // 
+            // ShowDialogbtn
+            // 
+            this.ShowDialogbtn.Label = "ShowDialog";
+            this.ShowDialogbtn.Name = "ShowDialogbtn";
+            this.ShowDialogbtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.ShowDialogbtn_Click);
+            // 
+            // GetSelection
+            // 
+            this.GetSelection.Label = "GetSelection";
+            this.GetSelection.Name = "GetSelection";
+            this.GetSelection.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.GetSelection_Click);
+            // 
             // Ribbon1
             // 
             this.Name = "Ribbon1";
@@ -113,6 +153,11 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton addTaskPane;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton txtRange;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton TaskPaneWindows;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton InsertImg;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Quit;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton Showbtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton ShowDialogbtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton GetSelection;
     }
 
     partial class ThisRibbonCollection

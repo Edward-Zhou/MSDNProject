@@ -42,6 +42,8 @@
             this.ShowForm = this.Factory.CreateRibbonButton();
             this.ShowWebView = this.Factory.CreateRibbonButton();
             this.SetPropertybtn = this.Factory.CreateRibbonButton();
+            this.htmlBody = this.Factory.CreateRibbonButton();
+            this.WordBody = this.Factory.CreateRibbonButton();
             this.tab1.SuspendLayout();
             this.group1.SuspendLayout();
             // 
@@ -60,6 +62,8 @@
             this.group1.Items.Add(this.ShowForm);
             this.group1.Items.Add(this.ShowWebView);
             this.group1.Items.Add(this.SetPropertybtn);
+            this.group1.Items.Add(this.htmlBody);
+            this.group1.Items.Add(this.WordBody);
             this.group1.Label = "group1";
             this.group1.Name = "group1";
             // 
@@ -99,6 +103,18 @@
             this.SetPropertybtn.Name = "SetPropertybtn";
             this.SetPropertybtn.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.SetPropertybtn_Click);
             // 
+            // htmlBody
+            // 
+            this.htmlBody.Label = "htmlBody";
+            this.htmlBody.Name = "htmlBody";
+            this.htmlBody.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.htmlBody_Click);
+            // 
+            // WordBody
+            // 
+            this.WordBody.Label = "WordBody";
+            this.WordBody.Name = "WordBody";
+            this.WordBody.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.WordBody_Click);
+            // 
             // Ribbon2
             // 
             this.Name = "Ribbon2";
@@ -123,6 +139,8 @@
         internal Microsoft.Office.Tools.Ribbon.RibbonButton ShowForm;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton ShowWebView;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton SetPropertybtn;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton htmlBody;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton WordBody;
     }
 
     partial class ThisRibbonCollection

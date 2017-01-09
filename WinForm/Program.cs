@@ -18,7 +18,7 @@ namespace WinForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Classfrm());
+            Application.Run(new frmDataGridView());
             
         }
     }

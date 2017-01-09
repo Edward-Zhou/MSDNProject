@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OfficeAPI.exe" size="184256">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OfficeAPI.exe" size="195584">
       <assemblyIdentity name="OfficeAPI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vl22emvZST3tRNtV/a8a13imKcrM1WG1CEIrA3Ep9Xc=</dsig:DigestValue>
+        <dsig:DigestValue>a+0bLzbb1sylpyLgmhY6Cn2+VA+Ui1dvbVUPkUKo2rQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -47,6 +47,7 @@
         Me.addShape = Me.Factory.CreateRibbonButton
         Me.changeShape = Me.Factory.CreateRibbonButton
         Me.getShape = Me.Factory.CreateRibbonButton
+        Me.UpdateTable = Me.Factory.CreateRibbonButton
         Me.Tab1.SuspendLayout()
         Me.Group1.SuspendLayout()
         '
@@ -63,6 +64,7 @@
         Me.Group1.Items.Add(Me.addShape)
         Me.Group1.Items.Add(Me.changeShape)
         Me.Group1.Items.Add(Me.getShape)
+        Me.Group1.Items.Add(Me.UpdateTable)
         Me.Group1.Label = "Group1"
         Me.Group1.Name = "Group1"
         '
@@ -86,6 +88,11 @@
         Me.getShape.Label = "getShape"
         Me.getShape.Name = "getShape"
         '
+        'UpdateTable
+        '
+        Me.UpdateTable.Label = "UpdateTable"
+        Me.UpdateTable.Name = "UpdateTable"
+        '
         'Ribbon1
         '
         Me.Name = "Ribbon1"
@@ -104,6 +111,7 @@
     Friend WithEvents addShape As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents changeShape As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents getShape As Microsoft.Office.Tools.Ribbon.RibbonButton
+    Friend WithEvents UpdateTable As Microsoft.Office.Tools.Ribbon.RibbonButton
 End Class
 
 Partial Class ThisRibbonCollection

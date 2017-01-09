@@ -24,7 +24,17 @@
             app.showNotification('The current subject is', result.value)
         });
     }
+    function getPro() {
+        var item = Office.context.mailbox.item;
+        item.loadCustomPropertiesAsync(customPropsCallback);
+    }
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
 
+        customProps.set("myProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
     function addToRecipients() {
         var item = Office.context.mailbox.item;
         var addressToAdd = {

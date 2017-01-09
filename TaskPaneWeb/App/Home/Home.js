@@ -22,31 +22,53 @@
             $('#createObject').click(createObject);
             $('#insertImageWithStream').click(insertImageWithStream);
             $('#getIP').click(getIP);
+            $('#CallAjax').click(CallAjax);
+            $('#SaveAsy').click(SaveAsy);
         });
     };
+    function SaveAsy() {
+        Office.context.mailbox.item.saveAsync(
+            function callback(result) {
+                console.log(result);
+            });
+    }
+        function CallAjax() {
+        $.ajax({
+                url: 'http://real-chart.finance.yahoo.com/table.csv?s=CVX&a=01&b=19&c=2001&d=01&e=19&f=2016&g=v&ignore=.csv',
+                type: 'GET',
+                dataType: "json",
+                contentType: 'application/json;charset=utf-8'
+        }).done(function (data) {
+            app.showNotification(data.Status, data.Message);
+        }).fail(function (status) {
+            app.showNotification('Error', 'Could not communicate with the server.');
+        }).always(function () { 
 
-    function getUrl() {
-        app.showNotification(document.URL+" ; "+window.location.href+" ; "+window.document.referrer);
+        });
+    }
+        function getUrl() {
+        app.showNotification(document.URL + " ; " +window.location.href + " ; " +window.document.referrer);
     }
 
-    function DocumentRefer() {
+        function DocumentRefer() {
         var x = document.referrer;
         app.showNotification(x);
     }
 
-    // Reads data from current document selection and displays a notification
-    function getDataFromSelection() {
-        
+        // Reads data from current document selection and displays a notification
+        function getDataFromSelection() {
+
         Office.context.document.getSelectedDataAsync(Office.CoercionType.Text,
-            { valueFormat: "formatted" },
+            { valueFormat: "formatted"
+        },
             function (result) {
                 if (result.status === Office.AsyncResultStatus.Succeeded) {
                     app.showNotification('The selected text is:', '"' + result.value + '"');
                 } else {
                     app.showNotification('Error:', result.error.message);
-                }
             }
-        );
+        }
+            );
     }
 
 })();
@@ -310,7 +332,7 @@ function addTablewithFormula() {
 
 }
 function getDocumentAsCompressed() {
-    Office.context.document.getFileAsync("text",
+    Office.context.document.getFileAsync(Office.FileType.Compressed,
        { sliceSize: 100000 },
        function (result) {
 
@@ -566,7 +588,7 @@ function getWordSelectionHtml() {
         });
 
 }
-
+var xml="";
 function getWordSelectionOoxml()
 {
     Office.context.document.getSelectedDataAsync(Office.CoercionType.Ooxml,
@@ -579,12 +601,24 @@ function getWordSelectionOoxml()
                else {
                    // Get selected data.
                    var dataValue = asyncResult.value;
+                   xml=dataValue;
                    console.log('Selected data is ' + dataValue);
                }
            });
 
 }
-
+function setWordSelectionOoxml() {
+    Office.context.document.setSelectedDataAsync(xml,Office.CoercionType.Ooxml,
+        function (asyncResult) {
+            if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                console.log(error.name + " : " + asyncResult.error);
+            }
+            else {
+                console.log('ok');
+            }
+        }
+        );
+}
 function createCookies() {
     document.cookie = "username=John Doe;expires=Thu, 18 Dec 2016 12:00:00 UTC";
 }

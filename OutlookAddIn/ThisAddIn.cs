@@ -7,6 +7,7 @@ using Outlook = Microsoft.Office.Interop.Outlook;
 using Office = Microsoft.Office.Core;
 
 using System.Windows.Forms;
+using Microsoft.Office.Core;
 
 namespace OutlookAddIn
 {
@@ -16,12 +17,47 @@ namespace OutlookAddIn
         internal Outlook.Items items;
         internal Outlook.MailItem item;
         internal Outlook.AppointmentItem appointmentItem;
+        internal Outlook.TaskItem taskItem;
         string _PreviousMeetingId = string.Empty; 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            helper = new Helper();
-            items = Application.GetNamespace("MAPI").GetDefaultFolder(Outlook.OlDefaultFolders.olFolderCalendar).Items;
-            items.ItemAdd += items_ItemAdd;
+            Application.NewMailEx += Application_NewMailEx;
+            //Application.ItemContextMenuDisplay += Application_ItemContextMenuDisplay;
+            //helper = new Helper();
+            //items = Application.GetNamespace("MAPI").GetDefaultFolder(Outlook.OlDefaultFolders.olFolderCalendar).Items;
+            //items.ItemAdd += items_ItemAdd;
+        }
+
+        void Application_ItemContextMenuDisplay(Office.CommandBar CommandBar, Outlook.Selection Selection)
+        {
+            var contextButton = CommandBar.Controls.Add(MsoControlType.msoControlButton, missing, missing, missing, true) as CommandBarButton;
+            contextButton.Visible = true;
+            contextButton.Caption = "some caption...";
+            contextButton.Click += new _CommandBarButtonEvents_ClickEventHandler(contextButton_Click);
+
+        }
+        void contextButton_Click(CommandBarButton Ctrl, ref bool CancelDefault)
+        {
+            MessageBox.Show("ok");
+        }
+        void Application_NewMailEx(string EntryIDCollection)
+        {
+            string TorgateMail = "v-tazho@hotmail.com";
+            string[] entryIDs = EntryIDCollection.Split(',');
+            foreach (string entryID in entryIDs)
+            {
+                Outlook.NameSpace ns = Application.Session;
+                Outlook.MailItem newmail = ns.GetItemFromID(entryID, missing) as Outlook.MailItem;
+                if (newmail.SenderEmailAddress.ToLower() == TorgateMail)
+                {
+                    newmail.Delete();
+                }
+                //int b1 = String.Compare(TorgateMail, newmail.SenderEmailAddress, true);
+                //if (b1 == 0)
+                //{
+                //    newmail.Delete();
+                //}
+            }
         }
         
         void items_ItemAdd(object Item)
@@ -80,10 +116,10 @@ namespace OutlookAddIn
             Application.ActiveExplorer().CurrentFolder.Display();
         }
 
-        protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
-        {
-            return new Ribbon1();
-        }
+        //protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
+        //{
+        //    return new RibbonContextMenu();
+        //}
         #region VSTO generated code
 
         /// <summary>

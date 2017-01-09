@@ -287,5 +287,161 @@ namespace WordAddIn
             //item1.Left = left;
             //item1.Top = top;
         }
+
+        private void InsertXMLbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            string xmlString =
+    "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" +
+    "<w:p xmlns:w='http://schemas.microsoft.com/office/word/2003/wordml'>" +
+            "<w:r>" +
+            "<w:rPr>" +
+            "<w:color w:val='Black' /><w:rFonts w:ascii='Calibri' w:h-ansi='Calibri' w:cs='Calibri'/>" +
+            "<w:sz w:val='22'/>" +
+        "</w:rPr>" +
+    "<w:fldChar w:fldCharType='begin' />"+
+    "<w:instrText xml:space='preserve'> MacroButton TEST TEST</w:instrText>"+
+                "<w:fldChar w:fldCharType='begin'>"+
+                "<w:fldData xml:space='preserve'>KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA"+
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA"+
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA"+
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA"+
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA"+
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq"+
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKg =</w:fldData>" +
+                "</w:fldChar>" +
+                " <w:instrText xml:space='preserve'> ADDIN TEST</w:instrText>" +
+                " <w:fldChar w:fldCharType='end' />" +
+                "<w:fldChar w:fldCharType='end' />" +
+                "</w:r>" +
+                "</w:p>";
+            xmlString =  System.IO.File.ReadAllText(@"D:\Edward\Project\MSDNProject\MSDNProject\WordAddIn\Field.xml");
+            Globals.ThisAddIn.Application.Selection.InsertXML(xmlString);
+
+        }
+        Field f;
+        private void InsertAddInField_Click(object sender, RibbonControlEventArgs e)
+        {
+            Document d = Globals.ThisAddIn.Application.ActiveDocument;
+            Range r = Globals.ThisAddIn.Application.Selection.Range;
+            f = Globals.ThisAddIn.Application.ActiveDocument.Fields.Add(r,WdFieldType.wdFieldAddin,"Text");
+            string data="KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA" +
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA" +
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA" +
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA" +
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoA" +
+"KgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAq" +
+"ACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKgAqACoAKg";
+            MessageBox.Show(data.Length.ToString());
+            f.Data = data;
+        }
+
+        private void getAddInField_Click(object sender, RibbonControlEventArgs e)
+        {
+            //MessageBox.Show(f.Data);
+            foreach (Field ff in Globals.ThisAddIn.Application.ActiveDocument.Fields)
+            {
+                string s = Globals.ThisAddIn.Application.ActiveDocument.Fields[1].Data;
+            
+                MessageBox.Show(s);
+            }
+        }
+
+        private void WordArtbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            foreach (Microsoft.Office.Interop.Word.Shape shape in Globals.ThisAddIn.Application.ActiveDocument.InlineShapes)
+            {
+                System.Diagnostics.Debug.WriteLine(shape.AlternativeText);
+            }
+            //float leftPosition = (float)Globals.ThisAddIn.Application.Selection.Information[
+            //    Microsoft.Office.Interop.Word.WdInformation.wdHorizontalPositionRelativeToPage];
+            //float topPosition = (float)Globals.ThisAddIn.Application.Selection.Information[
+            //    Microsoft.Office.Interop.Word.WdInformation.wdVerticalPositionRelativeToPage];
+            //Microsoft.Office.Interop.Word.Shape shape = Globals.ThisAddIn.Application.ActiveDocument.Shapes.AddTextEffect(
+            //   Microsoft.Office.Core.MsoPresetTextEffect.msoTextEffect29, "SampleText",
+            //   "Arial Black", 24, Microsoft.Office.Core.MsoTriState.msoFalse,
+            //   Microsoft.Office.Core.MsoTriState.msoFalse, leftPosition, topPosition);
+            ////shape.Select();
+            ////var rng =  // Globals.ThisAddIn.Application.Selection.ShapeRange;
+            ////shape.Left = (float)WdShapePosition.wdShapeCenter;
+            ////shape.Top = (float)WdShapePosition.wdShapeCenter;
+            ////shape.RelativeVerticalPosition = WdRelativeVerticalPosition.wdRelativeVerticalPositionPage;
+            //shape.RelativeHorizontalPosition = WdRelativeHorizontalPosition.wdRelativeHorizontalPositionMargin;
+            //shape.RelativeVerticalPosition = WdRelativeVerticalPosition.wdRelativeVerticalPositionMargin;
+            
+            //shape.Left = (int)WdShapePosition.wdShapeCenter;
+            //shape.Top = (int)WdShapePosition.wdShapeCenter;
+            //shape.TextFrame2.WarpFormat = MsoWarpFormat.msoWarpFormat15;
+            //shape.LayoutInCell = 0;
+            //rng.RelativeHorizontalPosition = WdRelativeHorizontalPosition.wdRelativeHorizontalPositionPage;
+            //rng.RelativeVerticalPosition = WdRelativeVerticalPosition.wdRelativeVerticalPositionPage;
+            //rng.RelativeHorizontalSize = WdRelativeHorizontalSize.wdRelativeHorizontalSizePage;
+            //rng.RelativeVerticalSize = WdRelativeVerticalSize.wdRelativeVerticalSizePage;
+            //rng.Left = (float)WdShapePosition.wdShapeCenter;
+            //  Globals.ThisAddIn.Application.Selection.ShapeRange.LeftRelative = (float)wdShapePositionRelativeNone;
+            //rng.Top = (float)WdShapePosition.wdShapeCenter;
+            //rng.TopRelative = (float)WdShapePositionRelative. wdShapePositionRelativeNone;
+            //rng.WidthRelative = (float)WdShapeSizeRelative. wdShapeSizeRelativeNone;
+            //rng.HeightRelative = (float)WdShapeSizeRelative.wdShapeSizeRelativeNone;
+            //rng.LockAnchor = 0;
+            //rng.LayoutInCell =0;
+        }
+
+        private void Restrictionbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            Word.Document doc = Globals.ThisAddIn.Application.ActiveDocument;
+            doc.Unprotect("123");
+            doc.Styles["Line Number"].Locked = !doc.Styles["Line Number"].Locked;//true;  //disable heading 1
+            //doc.Styles["heading 2"].Locked = false; //enable heading 2
+            doc.Protect(WdProtectionType.wdNoProtection, Type.Missing, "123", Type.Missing, true);
+        }
+
+        private void paraID_Click(object sender, RibbonControlEventArgs e)
+        {
+            Word.Application oWord = Globals.ThisAddIn.Application;
+            Word.Shape shNew = oWord.ActiveDocument.Shapes.AddTextbox(Microsoft.Office.Core.MsoTextOrientation.msoTextOrientationHorizontal,
+ 100, 100, 100, 100);               
+            shNew.Select();
+            int id = 10 ;
+            shNew.Name="tET";
+            Word.Paragraphs ps = oWord.Selection.Paragraphs;
+            ps[1].ID = "IND1";
+            ps[1].Range.Text = "Test";
+            ps[1].Range.ID = "IND1";
+            
+            foreach (Word.Paragraph p in oWord.ActiveDocument.Paragraphs)
+            {
+                p.ID = "NO" + id.ToString();
+                id++;
+            }
+            //int id=1;
+            //Word.Paragraphs ps = Globals.ThisAddIn.Application.ActiveDocument.Paragraphs;
+            //ps[1].ID = "IND1";
+            //foreach(Word.Paragraph p in Globals.ThisAddIn.Application.ActiveDocument.Paragraphs)
+            //{
+            //    p.ID = "NO" + id.ToString();
+            //}
+        }
+
+        private void SetFont_Click(object sender, RibbonControlEventArgs e)
+        {
+            Document document = Globals.ThisAddIn.Application.ActiveDocument;
+            Paragraph pp = document.Paragraphs.Add(Type.Missing);
+            pp.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+            pp.Range.Font.Name = "B Nazanin";
+            pp.Range.Font.Size = 16;
+            pp.Range.InsertParagraphAfter();
+            pp.Range.Text = "Arabic Text سلام "; 
+
+        } 
     }
 }

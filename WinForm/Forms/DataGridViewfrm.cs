@@ -72,5 +72,12 @@ namespace WinForm.Forms
            public int Id{get;set;}
            public string Nome{get;set;}
         }
+
+        private void DataGridViewfrm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'mSDNDataSet.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter.Fill(this.mSDNDataSet.Table);
+
+        }
     }
 }

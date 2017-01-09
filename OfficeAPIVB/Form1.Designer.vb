@@ -35,6 +35,8 @@ Partial Class Form1
         Me.AddParagraph = New System.Windows.Forms.Button()
         Me.ExcelGetObject = New System.Windows.Forms.Button()
         Me.ExcelCreateApp = New System.Windows.Forms.Button()
+        Me.EmbedExcel = New System.Windows.Forms.Button()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,7 +88,7 @@ Partial Class Form1
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.SetRTFBodybtn)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 184)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 284)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(599, 100)
         Me.GroupBox1.TabIndex = 5
@@ -155,11 +157,30 @@ Partial Class Form1
         Me.ExcelCreateApp.Text = "ExcelCreateApp"
         Me.ExcelCreateApp.UseVisualStyleBackColor = True
         '
+        'EmbedExcel
+        '
+        Me.EmbedExcel.Location = New System.Drawing.Point(394, 42)
+        Me.EmbedExcel.Name = "EmbedExcel"
+        Me.EmbedExcel.Size = New System.Drawing.Size(93, 23)
+        Me.EmbedExcel.TabIndex = 12
+        Me.EmbedExcel.Text = "EmbedExcel"
+        Me.EmbedExcel.UseVisualStyleBackColor = True
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Location = New System.Drawing.Point(619, 13)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(574, 459)
+        Me.WebBrowser1.TabIndex = 13
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(651, 396)
+        Me.ClientSize = New System.Drawing.Size(1205, 484)
+        Me.Controls.Add(Me.WebBrowser1)
+        Me.Controls.Add(Me.EmbedExcel)
         Me.Controls.Add(Me.ExcelCreateApp)
         Me.Controls.Add(Me.ExcelGetObject)
         Me.Controls.Add(Me.AddParagraph)
@@ -191,5 +212,7 @@ Partial Class Form1
     Friend WithEvents AddParagraph As System.Windows.Forms.Button
     Friend WithEvents ExcelGetObject As System.Windows.Forms.Button
     Friend WithEvents ExcelCreateApp As System.Windows.Forms.Button
+    Friend WithEvents EmbedExcel As System.Windows.Forms.Button
+    Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
 
 End Class

@@ -11,3 +11,4 @@ D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn\obj\Debug\PowerPointAd
 D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn\obj\Debug\PowerPointAddIn.dll
 D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn\obj\Debug\PowerPointAddIn.pdb
 D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn\obj\Debug\PowerPointAddIn.UserControl1.resources
+D:\Edward\Project\MSDNProject\MSDNProject\PowerPointAddIn\obj\Debug\PowerPointAddIn.frmPPT.resources

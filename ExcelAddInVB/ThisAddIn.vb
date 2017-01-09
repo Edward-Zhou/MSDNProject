@@ -8,6 +8,8 @@ Public Class ThisAddIn
     Sub ThisWorkbook_BeforeSave(ByVal workbook As Excel.Workbook, ByVal SaveAsUI As Boolean, _
         ByRef Cancel As Boolean) Handles Application.WorkbookBeforeSave
         Console.Write(SaveAsUI)
+        Dim wsS As Microsoft.Office.Interop.Excel.Worksheet
+
     End Sub
 
 

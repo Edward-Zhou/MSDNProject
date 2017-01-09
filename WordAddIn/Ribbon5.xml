@@ -6,7 +6,17 @@
         <group id="MyGroup"
                label="My Group">
           <checkBox id ="myCheckbox" getPressed="GetPressed" onAction="GetAction"/>
+          <comboBox
+        id="Combo1"
+        label="Add Function Switch"
+        onChange="OnChange" getText="getText">
+            <item id="F1" label="Calibri Light" />
+            <item id="F2" label="Calibri" />
+            <item id="F3" label="SimSun" />
+          </comboBox>          
+          <!--<comboBox idQ="Font" visible="true" onChange="FontChange"/>-->
         </group>
+        
       </tab>
     </tabs>
   </ribbon>

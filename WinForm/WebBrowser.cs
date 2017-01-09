@@ -29,6 +29,20 @@ namespace WinForm
             }
         }
 
+        private void WebBrowser_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
+
+        private void webBrowser2_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            //if (e.Url.ToString().Contains("javascript:void(0)"))
+            //{
+            //    e.Cancel = true;
+            //}
+        }
+
     }
     //[Guid("6D5140C1-7436-11CE-8034-00AA006009FA")]
 

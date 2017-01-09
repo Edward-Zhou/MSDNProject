@@ -18,13 +18,20 @@ namespace PowerPointAddIn1
 
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            instance = this;
-
+            //instance = this;
+            PowerPoint.Application p = new PowerPoint.Application();
+            
             //eventHandler = new _CommandBarButtonEvents_ClickEventHandler(App_WindowBeforeDoubleClick);
 
             //Globals.ThisAddIn.Application.WindowBeforeDoubleClick += new PowerPoint.EApplication_WindowBeforeDoubleClickEventHandler(App_WindowBeforeDoubleClick);// new PowerPoint.EApplication_WindowBeforeRightClickEventHandler(App_WindowBeforeDoubleClick);
             //Globals.ThisAddIn.Application.WindowBeforeRightClick += new PowerPoint.EApplication_WindowBeforeRightClickEventHandler(App_WindowBeforeRightClick);// new PowerPoint.EApplication_WindowBeforeRightClickEventHandler(App_WindowBeforeDoubleClick);
+            //Globals.ThisAddIn.Application.PresentationClose += Application_PresentationClose;
+        }
 
+        void Application_PresentationClose(PowerPoint.Presentation Pres)
+        {
+            
+            //throw new NotImplementedException();
         }
         private void App_WindowBeforeDoubleClick
    (Microsoft.Office.Interop.PowerPoint.Selection Sel, ref bool Cancel)

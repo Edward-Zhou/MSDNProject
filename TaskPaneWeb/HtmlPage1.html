@@ -14,7 +14,7 @@
         var apiKey = 'yEay2800UzP7fQ5v6m9W77Dn';
         var scopes = 'https://www.googleapis.com/auth/contacts.readonly';
         $(document).on("click", ".googleContactsButton", function () {
-            alert(document.cookie);
+            //alert(document.cookie);
             //gapi.client.setApiKey(apiKey);
             //window.setTimeout(authorize);
         });
@@ -30,10 +30,44 @@
                   });
             }
         }
+        function CallAjax() {
+            //$.ajax({
+            //    url: 'http://real-chart.finance.yahoo.com/table.csv?s=CVX&a=01&b=19&c=2001&d=01&e=19&f=2016&g=v&ignore=.csv&callback=?',
+            //    type: 'GET',
+            //    dataType: "json",
+            //    contentType: 'application/json;charset=utf-8'
+            //}).done(function (data) {
+            //    console.log(data.Status, data.Message);
+            //}).fail(function (status) {
+            //    console.log('Error', 'Could not communicate with the server.');
+            //}).always(function () {
+
+            //});
+            $.ajax({
+                url: 'http://real-chart.finance.yahoo.com/table.csv?s=CVX&a=01&b=19&c=2001&d=01&e=19&f=2016&g=v&ignore=.csv',
+                type: 'GET',
+                //dataType: "text/csv",
+                //contentType:'application/json;charset=utf-8',
+                dataType: "jsonp",
+                //jsonpCallback: "localJsonpCallback",
+                contentType: 'application/csv;charset=utf-8',
+                success: function (data)
+                {
+                    console.log("success " + data);
+                },
+                error: function (data) {
+                    console.log("error " + data);
+                }
+            });
+        }
+        function localJsonpCallback(json) {
+            console.log("callback " + json);
+        }
     </script>
     <script src="https://apis.google.com/js/client.js"></script>
     <button class="googleContactsButton">Get my contacts</button>
     <button class="googleContactsButton" onclick="test()">ActiveXObject</button>
+    <button class="googleContactsButton" onclick="CallAjax()">CallAjax</button>
 
     <div style="color:red;font-size:12px">Hello Word</div> 
     <p id="data"></p>

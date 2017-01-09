@@ -90,5 +90,68 @@ namespace PowerPointAddIn
         {
             Globals.ThisAddIn.AddAllTaskPanesWindows();
         }
+
+        private void InsertImg_Click(object sender, RibbonControlEventArgs e)
+        {
+            Chart oChart;
+            foreach (Slide s in Globals.ThisAddIn.Application.ActivePresentation.Slides)
+            {
+                foreach (Microsoft.Office.Interop.PowerPoint.Shape shape in s.Shapes)
+                {
+                    if (shape.HasChart==MsoTriState.msoTrue)
+                    {
+                        shape.Chart.Shapes.AddPicture(@"C:\Users\v-tazho\Desktop\QQ.png", MsoTriState.msoTrue, MsoTriState.msoTrue, 1, 1, 100, 50);
+                    }
+                }
+            }
+        }
+
+        private void Quit_Click(object sender, RibbonControlEventArgs e)
+        {
+            //Globals.ThisAddIn.Application.Quit();
+            //Microsoft.Office.Interop.PowerPoint.Presentation ppt = Globals.ThisAddIn.Application.ActivePresentation;
+            //ppt.Close();
+            Microsoft.Office.Interop.PowerPoint.Application ppta = Globals.ThisAddIn.Application;
+            ppta.Quit();
+            releaseCOM(ppta);
+        }
+        private static void releaseCOM(object o)
+        {
+            try
+            {
+                System.Runtime.InteropServices.Marshal.FinalReleaseComObject(o);
+            }
+            catch { }
+            finally
+            {
+                o = null;
+            }
+        }
+
+        private void Showbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            frmPPT f = new frmPPT();
+            f.Show();
+        }
+
+        private void ShowDialogbtn_Click(object sender, RibbonControlEventArgs e)
+        {
+            frmPPT f = new frmPPT();
+            f.ShowDialog();
+        }
+
+        private void GetSelection_Click(object sender, RibbonControlEventArgs e)
+        {
+            int Arg1=0;
+            int Arg2=0;
+            int id=0;
+            Chart selection = Globals.ThisAddIn.Application.ActiveWindow.Selection as Chart;
+
+            selection.GetChartElement(50,
+                50,ref id,ref Arg1,ref Arg2);
+            //selection.ShapeRange.Fill.Visible = MsoTriState.msoTrue;
+            //selection.ShapeRange.Fill.ForeColor.RGB = (int)0xFF0000; 
+
+        }
     }
 }

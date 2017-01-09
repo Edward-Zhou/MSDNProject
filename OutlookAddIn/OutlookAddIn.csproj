@@ -197,6 +197,7 @@
     <Compile Include="Ribbon2.Designer.cs">
       <DependentUpon>Ribbon2.cs</DependentUpon>
     </Compile>
+    <Compile Include="RibbonContextMenu.cs" />
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -247,6 +248,9 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RibbonContextMenu.xml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -12,9 +12,15 @@
             $('#get-subject').click(getSubject);
             $('#add-to-recipients').click(addToRecipients);
             $('#getBody').click(getBody);
+            $('#SaveAsy').click(SaveAsy);
         });
     };
-
+    function SaveAsy() {
+        Office.context.mailbox.item.saveAsync(
+            function callback(result) {
+                console.log(result);
+            });
+    };
     function setSubject() {
         Office.cast.item.toItemCompose(Office.context.mailbox.item).subject.setAsync("Hello world!");
     }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="TaskPane"
-     ProductID="{01f846d7-7236-477f-920f-97f2a09195b0}"
+     ProductID="{14e73176-23b1-49b2-ae2f-02b3fc9fedb7}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >

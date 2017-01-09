@@ -51,4 +51,8 @@ Public Class Ribbon1
             MsgBox("width: " & s.Width & " ;height: " & s.Height & " ;item(1): " & .Item(1) & "; item(2): " & .Item(2) & "; item(3): " & .Item(3) & "; item(4): " & .Item(4))
         End With
     End Sub
+
+    Private Sub UpdateTable_Click(sender As Object, e As RibbonControlEventArgs) Handles UpdateTable.Click
+        Globals.ThisAddIn.UpdateTablebak()
+    End Sub
 End Class

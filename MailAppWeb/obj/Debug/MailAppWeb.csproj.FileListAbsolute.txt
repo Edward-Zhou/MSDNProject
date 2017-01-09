@@ -3,3 +3,4 @@ D:\Edward\Project\MSDNProject\MSDNProject\MailAppWeb\bin\MailAppWeb.dll
 D:\Edward\Project\MSDNProject\MSDNProject\MailAppWeb\bin\MailAppWeb.pdb
 D:\Edward\Project\MSDNProject\MSDNProject\MailAppWeb\obj\Debug\MailAppWeb.dll
 D:\Edward\Project\MSDNProject\MSDNProject\MailAppWeb\obj\Debug\MailAppWeb.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\MailAppWeb\obj\Debug\MailAppWeb.csprojResolveAssemblyReference.cache

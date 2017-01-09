@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using Microsoft.Office.Core;
 using Microsoft.Office.Interop.Excel;
 using Microsoft.Office.Tools.Ribbon;
+using System.Windows.Threading;
+using System.Threading;
 
 namespace ExcelAddIn
 {
@@ -17,6 +19,7 @@ namespace ExcelAddIn
     {
         private MyUserControl myUserControl1;
         private UserControl1 WPFUserControl;
+        private WPFUserControl wpf;
         private Microsoft.Office.Tools.CustomTaskPane myCustomTaskPane;
         //define CustomTaskPane
         public Microsoft.Office.Tools.CustomTaskPane myCustomTaskPaneShowHide;
@@ -24,17 +27,22 @@ namespace ExcelAddIn
         private string sheetName;
         private Microsoft.Office.Interop.Excel.Worksheet ws;
         internal Helper helper;
-
+        public RibbonWPF RibbonWPF { get; set; }
+        public SearchWindow sw { get; set; }
 
         private CExcelCtrl Ctrl;
         private Excel.Application ExcelApp { get { return this.Application; } }
-
+        public SynchronizationContext TheWindowsFormsSynchronizationContext { get; private set; }
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            helper = new Helper();
-            myUserControl1 = new MyUserControl();
-            myCustomTaskPane = this.CustomTaskPanes.Add(myUserControl1, "My Task Pane");
-            myCustomTaskPane.Visible = true;
+            //this.TheWindowsFormsSynchronizationContext = WindowsFormsSynchronizationContext.Current
+            //                               ?? new WindowsFormsSynchronizationContext();
+            //this.Application.SheetSelectionChange += Application_SheetSelectionChange;
+            //helper = new Helper();
+            //myUserControl1 = new MyUserControl();
+            //wpf =new WPFUserControl();
+            //myCustomTaskPane = this.CustomTaskPanes.Add(wpf, "My Task Pane");
+            //myCustomTaskPane.Visible = true;
             //Application.WorkbookBeforeSave += Application_WorkbookBeforeSave;
             //Ctrl = new CExcelCtrl(ExcelApp);
 
@@ -47,7 +55,14 @@ namespace ExcelAddIn
             //Application.WorkbookBeforeClose += new Excel.AppEvents_WorkbookBeforeCloseEventHandler(Application_WorkbookBeforeClose);
             //Application.WindowActivate += new Excel.AppEvents_WindowActivateEventHandler(Application_WindowActivate);
             //Application.SheetActivate+=Application_SheetActivate;
-            System.Windows.Forms.MessageBox.Show("要显示的内容");
+            //System.Windows.Forms.MessageBox.Show("要显示的内容");
+            
+        }
+
+        void Application_SheetSelectionChange(object Sh, Range Target)
+        {
+            
+            //Globals.Ribbons.Ribbon1.RibbonUI.ActivateTabMso("TabPictureToolsFormat");
         }
 
 
@@ -95,7 +110,7 @@ namespace ExcelAddIn
         private void Application_SheetActivate(object Sh)
         {
            
-            iRibbonUI.ribbon.Invalidate();
+            //iRibbonUI.ribbon.Invalidate();
             //for (int i = Globals.Ribbons.Ribbon1.comboBox1.Items.Count - 1; i >= 0; i--)
             //{
             //    Globals.Ribbons.Ribbon1.comboBox1.Items.RemoveAt(i);
@@ -162,18 +177,18 @@ namespace ExcelAddIn
 
         }
 
-        //Ribbon1 r1 = new Ribbon1();
+        Ribbon1 r1 = new Ribbon1();
 
         //protected override Microsoft.Office.Tools.Ribbon.IRibbonExtension[] CreateRibbonObjects()
         //{
-        //    r1 = new Ribbon1();
-        //    return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { r1 };
+        //    //r1 = new Ribbon1();
+        //    //return new Microsoft.Office.Tools.Ribbon.IRibbonExtension[] { r1 };
         //}  
         private Ribbon3 iRibbonUI;
         protected override Microsoft.Office.Core.IRibbonExtensibility CreateRibbonExtensibilityObject()
         {
-            iRibbonUI = new Ribbon3();
-            return iRibbonUI;
+            //iRibbonUI = new Ribbon3();
+            return new RibbonMix();
         }
         #region VSTO generated code
 

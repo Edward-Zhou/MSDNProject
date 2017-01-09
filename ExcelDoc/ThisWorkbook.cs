@@ -23,7 +23,7 @@ namespace ExcelDoc
            //this.Application.CommandBars["Task Pane"].Position = Microsoft.Office.Core.MsoBarPosition.msoBarBottom;
             Roller rooler=new Roller();
             ControlSite cs= Globals.Sheet1.Controls.AddControl(rooler, 0, 2, 1000, 30, "Roller1");
-            
+            Excel.Worksheet WS= this.Worksheets["sheet1"];
            
         }
 

@@ -10,6 +10,9 @@ using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
 using Microsoft.Office.Core;
 using System.Threading;
+using MSForms = Microsoft.Vbe.Interop.Forms;
+using Microsoft.VisualBasic.CompilerServices;
+using System.Data;
 
 namespace ExcelAddIn
 {
@@ -315,9 +318,160 @@ namespace ExcelAddIn
             //f.ShowDialog();
         }
 
+        private void RegisterEvent_Click(object sender, RibbonControlEventArgs e)
+        {
+            
+                //To insert an OLE Object which of type “CommandButton”. We need to use the ProgID for the command button, which is “Forms.CommandButton.1”
+                //Excel.Shape cmdButton = (Excel.Shape)Globals.ThisAddIn.Application.ActiveSheet.Shapes.AddOLEObject("Forms.CommandButton.1", Type.Missing, false, false, Type.Missing, Type.Missing, Type.Missing, 200, 100, 100, 100);
+            Excel.Worksheet s = Globals.ThisAddIn.Application.ActiveSheet;
+
+            Excel.Shape cmdButton = (Excel.Shape)s.OLEObjects(1);   
+                //We name the command button, we will use it later
+                cmdButton.Name = "btnClick";
+                //In order to access the Command button object, we are using NewLateBinding class as below
+                MSForms.CommandButton CmdBtn = (MSForms.CommandButton)NewLateBinding.LateGet((Excel.Worksheet)Globals.ThisAddIn.Application.ActiveSheet, null, "btnClick", new object[0], null, null, null);
+                //Set the required properties for the command button
+                CmdBtn.FontSize = 10;
+                CmdBtn.FontBold = true;
+                CmdBtn.Caption = "Click Me";
+                //Wiring up the Click event
+                CmdBtn.Click += new Microsoft.Vbe.Interop.Forms.CommandButtonEvents_ClickEventHandler(CmdBtn_Click);
+        }
+        void CmdBtn_Click()
+        {
+            //Adding the event code
+            System.Windows.Forms.MessageBox.Show("I am called from C# COM add-in");
+        }
+        public static void Convert(Microsoft.Office.Interop.Excel.Application excel, string inputFile, string outputFile)
+        {
+
+            Workbooks workbooks = null;
+            Workbook activeWorkbook = null;
+            Workbook workbook = null;
+
+            MsoFeatureInstall origFeatureInstall = MsoFeatureInstall.msoFeatureInstallNone;
+            bool[] origExcelOptions = new bool[7];
+            //defaultExcelOptions.CopyTo(origExcelOptions, 0);
+
+            bool okToRestore = false;
+            //try
+            //{
+                //try
+                //{
+                //    origFeatureInstall = excel.FeatureInstall;
+
+                //    //origExcelOptions[0] = excel.Visible;
+                //    origExcelOptions[1] = excel.DisplayAlerts;
+                //    origExcelOptions[2] = excel.AskToUpdateLinks;
+                //    origExcelOptions[3] = excel.AlertBeforeOverwriting;
+                //    origExcelOptions[4] = excel.EnableLargeOperationAlert;
+                //    origExcelOptions[5] = excel.Interactive;
+                //    origExcelOptions[6] = excel.EnableEvents;
+
+                //    okToRestore = true;
+
+                //    excel.ScreenUpdating = false;
+                //    excel.FeatureInstall = MsoFeatureInstall.msoFeatureInstallNone;
+
+                //    SetExcelOptions(excel, silentExcelOptions);
+                //}
+                //catch (Exception)
+                //{
+                //    Trap.trap();
+                //}
+
+                workbooks = excel.Workbooks;
+                activeWorkbook = excel.ActiveWorkbook;
+
+                object oMissing = System.Reflection.Missing.Value;
+                workbook = workbooks.Open(inputFile, true, false, oMissing, oMissing, oMissing, true, oMissing, oMissing,
+                                         oMissing, oMissing, oMissing, false, oMissing, oMissing);
+
+                workbook.RunAutoMacros(XlRunAutoMacro.xlAutoOpen);
+
+                XlFixedFormatQuality quality = XlFixedFormatQuality.xlQualityStandard;
+                workbook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF,
+                                             outputFile, quality, true, false, Type.Missing, Type.Missing, false, Type.Missing);
+                workbook.Close(false, oMissing, oMissing);
+               // activeWorkbook.Activate();
+            //}
+
+            // options back to original, COM objects released
+            //finally
+            //{
+            //    try
+            //    {
+            //        if (okToRestore)
+            //        {
+            //            excel.ScreenUpdating = true;
+            //            excel.FeatureInstall = origFeatureInstall;
+            //            SetExcelOptions(excel, origExcelOptions);
+            //        }
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Trap.trap();
+            //    }
+            //    try
+            //    {
+            //        if (workbook != null)
+            //            Marshal.ReleaseComObject(workbook);
+            //        if (activeWorkbook != null)
+            //            Marshal.ReleaseComObject(activeWorkbook);
+            //        if (workbooks != null)
+            //            Marshal.ReleaseComObject(workbooks);
+
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Trap.trap();
+            //    }
+            //}
+        }
+
+        private void ExportToPdf_Click(object sender, RibbonControlEventArgs e)
+        {
+            Convert(Globals.ThisAddIn.Application, @"D:\OfficeDev\Excel\201611\Test.xlsx", @"D:\OfficeDev\Excel\201611\Test.pdf");
+        }
+
+        private void AddHyperlink_Click(object sender, RibbonControlEventArgs e)
+        {
+            Excel.Worksheet ws = Globals.ThisAddIn.Application.ActiveSheet;
+            ws.Hyperlinks.Add(ws.Cells[1, 1], @"D:\OfficeDev\Excel\201611\Test.pdf", Type.Missing, "Test", "Test");
+        }
+
+        private void CreateList_Click(object sender, RibbonControlEventArgs e)
+        {
+            //User u1 = new User() { Id=1, Name="Tom1",Age=11};
+            //User u2 = new User() { Id = 2, Name = "Tom2", Age = 12 };
+            //User u3 = new User() { Id = 3, Name = "Tom3", Age = 13 };
+            TestDBEntities db = new TestDBEntities();
+            List<UserInfo> userInfo= db.UserInfoes.ToList();
+            //    Microsoft.Office.Tools.Excel.ListObject list1 = Globals.ThisAddIn.Application.ActiveSheet.
+            //this.Controls.AddListObject(this.Range["A1", "B4"], "list1");
+
+            //    // Bind the list object to the table.
+            //    string[] mappedColumn = { "Names" };
+            //    list1.SetDataBinding(ds, "Customers", mappedColumn);
 
 
+        }
 
-		
+        private void ActiveTab_Click(object sender, RibbonControlEventArgs e)
+        {
+            //Globals.Ribbons.Ribbon1.RibbonUI.ActivateTabMso("TabPictureToolsFormat");
+           
+        }
+
+        //private static void SetExcelOptions(Application excel, bool[] options)
+        //{
+        //    //excel.Visible = options[0];
+        //    excel.DisplayAlerts = options[1];
+        //    excel.AskToUpdateLinks = options[2];
+        //    excel.AlertBeforeOverwriting = options[3];
+        //    excel.EnableLargeOperationAlert = options[4];
+        //    excel.Interactive = options[5];
+        //    excel.EnableEvents = options[6];
+        //}
     }
 }

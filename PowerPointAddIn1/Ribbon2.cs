@@ -42,5 +42,11 @@ namespace PowerPointAddIn1
             Marshal.ReleaseComObject(presentations);
             System.Diagnostics.Debug.WriteLine("!!! button2_Click. end");
         }
+
+        private void button3_Click(object sender, RibbonControlEventArgs e)
+        {
+            PowerPoint.Application app = Globals.ThisAddIn.Application;
+            app.Quit();
+        }
     }
 }

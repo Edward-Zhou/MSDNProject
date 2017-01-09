@@ -16,3 +16,16 @@ D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.Ribb
 D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.csproj.GenerateResource.Cache
 D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.dll
 D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.pdb
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.csprojResolveAssemblyReference.cache
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Release\Database1.mdf
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Release\Database1_log.ldf
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Release\ExcelAddIn.dll.config
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Release\EntityFramework.dll
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\bin\Release\EntityFramework.xml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\WPFUserControl.baml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\SearchWindow.g.cs
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\WPFUserControl.g.cs
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn_MarkupCompile.lref
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\SearchWindow.baml
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.WPFControlHost.resources
+D:\Edward\Project\MSDNProject\MSDNProject\ExcelAddIn\obj\Release\ExcelAddIn.RibbonWPF.resources

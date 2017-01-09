@@ -166,22 +166,22 @@ errorHandler:
     End Sub
 
     Private Sub AddParagraph_Click(sender As Object, e As EventArgs) Handles AddParagraph.Click
-        Dim app As Word.Application
-        Dim doc As Word.Document
-        Dim p As Word.Paragraph
-        Dim rng As Word.Range
-        app = New Word.Application
-        app.Visible = True
-        doc = app.Documents.Open("D:\work\Palladium\Thread Practise\201603\20160325.docx")
-        p = doc.Paragraphs.Add
-        With p
-            .Range.Text = "test"
-            .Range.Font.Bold = 1
-            .Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter
-        End With
-        rng = doc.Range(Start:=DirectCast(doc.Content.End - 1, Object), End:=DirectCast(doc.Content.End, Object))
-        rng.Collapse(Word.WdCollapseDirection.wdCollapseEnd)
-        rng.InsertFile(FileName:="C:\Users\v-tazho\Desktop\Test (2).docx".ToString)
+        'Dim app As Word.Application
+        'Dim doc As Word.Document
+        'Dim p As Word.Paragraph
+        'Dim rng As Word.Range
+        'app = New Word.Application
+        'app.Visible = True
+        'doc = app.Documents.Open("D:\work\Palladium\Thread Practise\201603\20160325.docx")
+        'p = doc.Paragraphs.Add
+        'With p
+        '    .Range.Text = "test"
+        '    .Range.Font.Bold = 1
+        '    .Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter
+        'End With
+        'rng = doc.Range(Start:=DirectCast(doc.Content.End - 1, Object), End:=DirectCast(doc.Content.End, Object))
+        'rng.Collapse(Word.WdCollapseDirection.wdCollapseEnd)
+        'rng.InsertFile(FileName:="C:\Users\v-tazho\Desktop\Test (2).docx".ToString)
     End Sub
 
     Private Sub ExcelGetObject_Click(sender As Object, e As EventArgs) Handles ExcelGetObject.Click
@@ -202,4 +202,26 @@ errorHandler:
         eApp.Workbooks.Add()
         eApp.Visible = True
     End Sub
+
+    Private Sub EmbedExcel_Click(sender As Object, e As EventArgs) Handles EmbedExcel.Click
+        Dim Exl As Object = CreateObject("Excel.Application")
+        Dim tasks As New List(Of Task)
+        ' Execute the task 10 times.
+        tasks.Add(Task.Factory.StartNew(Sub()
+
+                                            Dim Bok As Object
+                                            Dim Shet As Object
+
+                                            Exl.visible = True
+                                            Exl.WindowState = -4143 'maximze window
+                                            Bok = Exl.Workbooks.Open("C:\Users\v-tazho\Desktop\Test.xlsx")
+                                            Shet = Exl.Workbooks(1).Sheets(1)
+                                        End Sub
+         ))
+
+        Task.WaitAll(tasks.ToArray())
+        SetParent(Exl.Hwnd, Me.Handle)
+    End Sub
+    Private Declare Function SetParent Lib "user32" (ByVal hWndChild As Integer, ByVal hWndNewParent As Integer) As Integer
+    
 End Class

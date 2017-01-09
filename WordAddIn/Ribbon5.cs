@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Windows.Forms;
 using Office = Microsoft.Office.Core;
 
 // TODO:  Follow these steps to enable the Ribbon (XML) item:
@@ -31,7 +32,7 @@ namespace WordAddIn
     [ComVisible(true)]
     public class Ribbon5 : Office.IRibbonExtensibility
     {
-        private Office.IRibbonUI ribbon;
+        //public Office.IRibbonUI ribbon;
 
         public Ribbon5()
         {
@@ -47,7 +48,16 @@ namespace WordAddIn
             bool tag = GetPressed(control);
         }
         #region IRibbonExtensibility Members
-
+        
+        public void OnChange(Office.IRibbonControl control, String text)
+        {
+            Globals.ThisAddIn.ComboboxText = text;
+            Globals.ThisAddIn.Application.Selection.Font.Name = text;            
+        }
+        public string getText(Office.IRibbonControl control)
+        {
+            return Globals.ThisAddIn.ComboboxText;
+        }
         public string GetCustomUI(string ribbonID)
         {
             return GetResourceText("WordAddIn.Ribbon5.xml");
@@ -60,7 +70,8 @@ namespace WordAddIn
 
         public void Ribbon_Load(Office.IRibbonUI ribbonUI)
         {
-            this.ribbon = ribbonUI;
+            //this.ribbon = ribbonUI;
+            Globals.ThisAddIn.ribbon = ribbonUI;
         }
 
         #endregion

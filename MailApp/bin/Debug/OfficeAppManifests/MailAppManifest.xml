@@ -1,34 +1,45 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<OfficeApp xsi:type="MailApp" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/office/appforoffice/1.1">
-  <Id>45774c5b-f7a6-4593-bd71-66279cb54444</Id>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
+  <Id>e4701824-8078-4ae9-ad3c-fd4c68d9ac57</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>MyAddin</ProviderName>
+
+  <ProviderName>[Provider name]</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="MyAddin"/>
-  <Description DefaultValue="My Outlook Addin"/>
-  <IconUrl DefaultValue="https://localhost/images/kwilt_icon_64x64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost/images/kwilt_icon_128x128.png"/>
-  <SupportUrl DefaultValue="http://www.kwilt.it/community"/>  
+  <DisplayName DefaultValue="MailApp111" />
+  <Description DefaultValue="MailApp111"/>
   <AppDomains>
     <AppDomain>https://accounts.kwilt.it</AppDomain>
   </AppDomains>
   <Hosts>
-    <Host Name="Mailbox"/>
+    <Host Name="Mailbox" />
   </Hosts>
   <Requirements>
     <Sets>
-      <Set Name="MailBox" MinVersion="1.1"/>
+      <Set Name="MailBox" MinVersion="1.3" />
     </Sets>
   </Requirements>
   <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:44300/AppRead/Home/Home.html"></SourceLocation>
+        <!--<SourceLocation DefaultValue="https://localhost:44300/Test.html"/>-->
+        <RequestedHeight>400</RequestedHeight>
+      </DesktopSettings>
+    </Form>
     <Form xsi:type="ItemEdit">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost/msoffice/outlook/appcompose/home/home.html"/>
+        <SourceLocation DefaultValue="https://localhost:44300/AppCompose/Home/Home.html"/>
+        <!--<SourceLocation DefaultValue="https://localhost:44300/Test.html"/>-->
       </DesktopSettings>
     </Form>
   </FormSettings>
-  <Permissions>ReadWriteItem</Permissions>
-  <Rule xsi:type="ItemIs" FormType="Edit" ItemType="Message"/>
+  <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit" />
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Read" />
+  </Rule>
   <DisableEntityHighlighting>false</DisableEntityHighlighting>
-  <VersionOverrides xsi:type="VersionOverridesV1_0" xmlns="http://schemas.microsoft.com/office/mailappversionoverrides"> </VersionOverrides>
 </OfficeApp>

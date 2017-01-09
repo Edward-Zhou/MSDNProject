@@ -43,4 +43,16 @@ namespace ClassLibrary
             return fileNames;
         }
     }
+
+    public interface IShout
+    { 
+        //定义方法
+        void ShoutMethod();
+    }
+    class ImplementIShout : IShout
+    {
+        void ShoutMethod { 
+            
+        }
+    }
 }

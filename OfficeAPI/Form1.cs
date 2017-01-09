@@ -29,7 +29,10 @@ using PowerPoint = Microsoft.Office.Interop.PowerPoint;
 using Microsoft.Office.Core;
 using Excel.Utilities;
 using OfficeAPI.Class.OpenXmlHelper.PPTHelper;
-
+using System.Net.Mail;
+using System.Net;
+using _word = Microsoft.Office.Interop.Word;
+using Microsoft.Office.Interop.Word;
 
 namespace OfficeAPI
 {
@@ -177,7 +180,7 @@ namespace OfficeAPI
         private void getCell_Click(object sender, EventArgs e)
         {
             GetCellValue getcell = new GetCellValue();
-            getcell.getCell(@"D:\OfficeDev\OpenXML\GetCell.xlsx");
+            getcell.getCell(@"D:\OfficeDev\OpenXML\Excel\20160822\ExcelRangeTarget.xlsx");
         }
 
         private void DateRegionFormat_Click(object sender, EventArgs e)
@@ -350,7 +353,7 @@ namespace OfficeAPI
             Workbook wk= app.Workbooks.Open(@"D:\OfficeDev\Excel\Test.xlsx");
             app.Visible = true;
             Worksheet ws = wk.ActiveSheet;
-            Range r = ws.Range["C4"];
+            Microsoft.Office.Interop.Excel.Range r = ws.Range["C4"];
             r.Validation.Add( XlDVType.xlValidateDecimal, XlDVAlertStyle.xlValidAlertStop, XlFormatConditionOperator.xlBetween, "0", "100");
             MessageBox.Show("ok");
         }
@@ -377,7 +380,7 @@ namespace OfficeAPI
             Workbook wk = app.Workbooks.Open(@"C:\Users\v-tazho\Desktop\Test.xlsx"); //excel file path
             app.Visible = true;
             Worksheet ws = wk.ActiveSheet;
-            Range r = ws.Range["B12"];
+            excel.Range r = ws.Range["B12"];
             MessageBox.Show(r.Text);
             string rSum = app.WorksheetFunction.Sum(ws.Range["A1:A5"]).ToString();
             MessageBox.Show(rSum);
@@ -391,7 +394,7 @@ namespace OfficeAPI
                 MainDocumentPart mainDocPart = doc.MainDocumentPart;
 
                 var run = new Run(new Text("test"));
-                var p = new Paragraph(new ParagraphProperties(
+                var p = new  DocumentFormat.OpenXml.Wordprocessing.Paragraph(new ParagraphProperties(
                      new Justification() { Val = JustificationValues.Center }),
                                    run);
 
@@ -548,7 +551,7 @@ namespace OfficeAPI
                         }
                     }
                   
-                    Range rangeToWriteData = activeWorkSheet.Range["A1", "C3"];
+                    excel.Range rangeToWriteData = activeWorkSheet.Range["A1", "C3"];
                     rangeToWriteData.Value2 = data;
                 }
             }
@@ -883,7 +886,179 @@ namespace OfficeAPI
             MessageBox.Show("ok");
         }
 
+        private void ExcelColumn_Click(object sender, EventArgs e)
+        {
+            ColumnWidth cw = new ColumnWidth();
+            cw.getDColumnWidth(@"D:\OfficeDev\OpenXML\Excel\20160822\General Tool 0806cT.xlsm");
+            //cw.getWidth(@"D:\OfficeDev\OpenXML\Excel\20160822\General Tool 0806c.xlsm");
+        }
+
+        private void SMTPbtn_Click(object sender, EventArgs e)
+        {
+            SmtpClient client = new SmtpClient("smtp.office365.com", 587);
+            client.EnableSsl = true;
+            client.Credentials = new System.Net.NetworkCredential("v-tazho@msdnofficedevteam.onmicrosoft.com", "Edward1121");
+            MailAddress from = new MailAddress("v-tazho@msdnofficedevteam.onmicrosoft.com", String.Empty, System.Text.Encoding.UTF8);
+            MailAddress to = new MailAddress("v-tazho@hotmail.com");
+            System.Net.Mail.MailMessage message = new System.Net.Mail.MailMessage(from, to);
+            message.Body = "The message I want to send.";
+            client.Send(message);
+            MessageBox.Show("ok");
+        }
+
+        private void ChangeField_Click(object sender, EventArgs e)
+        {
+            ChangeFieldClass cfc = new ChangeFieldClass();
+            cfc.GetSetField(@"D:\OfficeDev\OpenXML\Word\201609\Input.docm");
+        }
+
+        private void OneNotePage_Click(object sender, EventArgs e)
+        {
+            OneNoteExtension oneNote = new OneNoteExtension();
+            oneNote.OneNotePage();
+            MessageBox.Show("ok");
+        }
+
+        private void RequestAPI_Click(object sender, EventArgs e)
+        {
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("http://10.168.172.127/");
+
+            request.Method = "GET";
+            request.UseDefaultCredentials = true;
+            request.PreAuthenticate = true;
+            //request.Credentials = new NetworkCredential("v-tazho@microsoft.com", "Edward1001", "fareast");
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse(); // Raises Unauthorized Exception
+
+            
+        }
+
+        private void OneNoteCreatePage_Click(object sender, EventArgs e)
+        {
+            OneNoteExtension oneNote = new OneNoteExtension();
+            oneNote.OneNoteNewPage();
+            MessageBox.Show("ok");
+             
+        }
+
+        private void FileCopyExcel_Click(object sender, EventArgs e)
+        {
+            File.Copy(@"D:\OfficeDev\Excel\201611\Test.xlsx", @"D:\OfficeDev\Excel\201611\New0.xlsx", true);
+        }
+
+        private void CopyWorkbook_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setFont_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _word.Application winword = new _word.Application();
+                winword.ShowAnimation = false;
+                winword.Visible = false;
+
+                object missing = System.Reflection.Missing.Value;
+
+                _word.Document document = winword.Documents.Add(ref missing, ref missing, ref missing, ref missing);
+
+                _word.Paragraph pp = document.Paragraphs.Add(missing);
+                pp.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
+                pp.Range.Font.Name = "B Nazanin";
+                pp.Range.Font.Size = 16;
+                pp.Range.Text = "امید منصورنیا";
+                pp.Range.InsertParagraphAfter();
+
+
+                object filename = @"D:\OfficeDev\Word\201612\temp1.docx";
+                document.SaveAs2(ref filename);
+                document.Close(ref missing, ref missing, ref missing);
+                document = null;
+                winword.Quit(ref missing, ref missing, ref missing);
+                winword = null;
+                MessageBox.Show("Document created successfully !");
+
+                System.Diagnostics.Process.Start("WINWORD.EXE", filename.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        // Signals when the resolve has finished.
+        public static ManualResetEvent GetHostEntryFinished =
+            new ManualResetEvent(false);
+        private void DnsMethod_Click(object sender, EventArgs e)
+        {
+            //DoGetHostEntryAsync("vdi-v-tazho");
+            DoGetHostEntryAsync("10.168.197.122");
+        }
+        // Determine the Internet Protocol (IP) addresses for 
+        // this host asynchronously.
+        public static void DoGetHostEntryAsync(string hostname)
+        {
+            GetHostEntryFinished.Reset();
+            ResolveState ioContext = new ResolveState(hostname);
+
+            Dns.BeginGetHostEntry(ioContext.host,
+                new AsyncCallback(GetHostEntryCallback), ioContext);
+
+            // Wait here until the resolve completes (the callback 
+            // calls .Set())
+            GetHostEntryFinished.WaitOne();
+
+            Console.WriteLine("EndGetHostEntry({0}) returns:", ioContext.host);
+
+            foreach (IPAddress ip in ioContext.IPs.AddressList)
+            {
+                Console.WriteLine("    {0}", ip);
+            }
+
+        }
+        // Record the IPs in the state object for later use.
+        public static void GetHostEntryCallback(IAsyncResult ar)
+        {
+            ResolveState ioContext = (ResolveState)ar.AsyncState;
+
+            ioContext.IPs = Dns.EndGetHostEntry(ar);
+            GetHostEntryFinished.Set();
+        }
+
+        private void DoGetHostAddresses_Click(object sender, EventArgs e)
+        {
+            IPAddress[] ips;
+            //ips = Dns.GetHostAddresses("ip address"); 
+            ips = Dns.GetHostAddresses("");         
+            foreach (IPAddress ip in ips)
+            {
+                Console.WriteLine("    {0}", ip);
+            }
+
+        }       
+
     }
+    // Define the state object for the callback. 
+    // Use hostName to correlate calls with the proper result.
+    public class ResolveState
+    {
+        string hostName;
+        IPHostEntry resolvedIPs;
+
+        public ResolveState(string host)
+        {
+            hostName = host;
+        }
+
+        public IPHostEntry IPs
+        {
+            get { return resolvedIPs; } 
+            set {resolvedIPs = value;}}
+        public string host {get {return hostName;} 
+            set {hostName = value;}}
+    }
+
     public static class Extensions
     {
         public static XDocument GetXDocument(this OpenXmlPart part)

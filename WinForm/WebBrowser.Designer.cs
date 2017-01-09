@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.webBrowser2 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -37,19 +39,39 @@
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(575, 351);
+            this.webBrowser1.Size = new System.Drawing.Size(1038, 351);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.Size = new System.Drawing.Size(396, 246);
+            this.reportViewer1.TabIndex = 1;
+            // 
+            // webBrowser2
+            // 
+            this.webBrowser2.Location = new System.Drawing.Point(668, 12);
+            this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser2.Name = "webBrowser2";
+            this.webBrowser2.Size = new System.Drawing.Size(334, 250);
+            this.webBrowser2.TabIndex = 2;
+            this.webBrowser2.Url = new System.Uri("D:\\Edward\\Project\\MSDNProject\\MSDNProject\\WinForm\\HTML.html", System.UriKind.Absolute);
+            this.webBrowser2.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.webBrowser2_Navigating);
             // 
             // WebBrowser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(575, 351);
+            this.ClientSize = new System.Drawing.Size(1038, 351);
+            this.Controls.Add(this.webBrowser2);
+            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.webBrowser1);
             this.Name = "WebBrowser";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.WebBrowser_Load);
             this.ResumeLayout(false);
 
         }
@@ -57,6 +79,8 @@
         #endregion
 
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private System.Windows.Forms.WebBrowser webBrowser2;
     }
 }
 
